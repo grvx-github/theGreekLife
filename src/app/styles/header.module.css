@@ -1,0 +1,7 @@
+.navbar-nav{
+	justify-content: space-evenly;
+}
+
+.navbar-nav a {
+	padding: 0 1rem!important;
+}
