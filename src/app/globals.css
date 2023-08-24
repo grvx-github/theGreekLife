@@ -225,7 +225,7 @@ p {
   margin-block-end: 1rem;
 }
 .copyrightSection {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
   justify-content: space-around;
