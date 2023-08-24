@@ -203,6 +203,8 @@ p {
 }
 .footer{
   justify-content: space-between;
+  width: 90%;
+  margin-right: auto;
 }
 .footer a{
   text-decoration: none;
