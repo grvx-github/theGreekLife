@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const BoatSection = () => {
 	return (
-    <div className="d-flex flex-column boatSection">
+    <div className="d-flex flex-column boatSection bg-pg">
       <div className="imgDv">
         <Image src="/yatch.png" width={400} height={500} alt=''/>
       </div>

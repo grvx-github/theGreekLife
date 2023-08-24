@@ -7,13 +7,14 @@ import styles from "../styles/hero.module.css";
 import { Button } from "react-bootstrap";
 import { BsArrowRight } from "react-icons/bs";
 import Header from "./Header";
+import ShowMoreBtn from "./ShowMoreBtn";
 
 const Hero = () => {
   return (
-		
-    <Container fluid className={styles.heroContainer}>
-			<Header />
-      <div className={`${styles.heroCenter} d-flex flex-column`}>
+
+    <Container fluid className="heroContainer bg-pg">
+      <Header />
+      <div className="heroCenter d-flex flex-column">
         <h1>Destination Management Services</h1>
         <p>
           Welcome to Greece's premier destination management services provider!
@@ -21,9 +22,7 @@ const Hero = () => {
           ensuring every aspect of their journey is seamlessly coordinated and
           executed.
         </p>
-        <Button variant="dark" className="lBtn">
-          More info <BsArrowRight />
-        </Button>
+        <ShowMoreBtn />
       </div>
     </Container>
   );

@@ -2,15 +2,13 @@
 
 import React from "react";
 import Image from "next/image";
-import { BsArrowDown } from "react-icons/bs";
-import { Button } from "react-bootstrap";
 import ShowMoreBtn from "./ShowMoreBtn";
 
 const Events = () => {
   return (
     <div className="events">
-      <div className="weddingSection d-flex flex-row">
-        <Image src={"/weddings.png"} height={100} width={100} alt="" />
+      <div className="weddingSection d-flex ">
+        <Image src={"/wedding.png"} height={100} width={100} alt="" />
         <div className="weddingText">
           <h3>Weddings</h3>
           <p>
@@ -28,7 +26,7 @@ const Events = () => {
           <ShowMoreBtn />
         </div>
       </div>
-      <div className="corporateSection d-flex flex-row">
+      <div className="corporateSection d-flex ">
         <div className="corpText">
           <h3>Corporate Events and Other Events</h3>
           <p>
@@ -45,6 +43,9 @@ const Events = () => {
         </div>
         <Image src={"/corpEvent.png"} height={100} width={100} alt="" />
       </div>
+      <div className='poolImg'>
+        <Image src={'/poolImg.jpg'} alt="" width={100} height={100} />
+    </div>
     </div>
   );
 };

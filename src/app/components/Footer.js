@@ -3,13 +3,16 @@ import Link from "next/link";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { BsArrowRight } from "react-icons/bs";
 import Copyright from "./Copyright";
+import Image from "next/image";
+import Booking from "./Booking";
 
 const Footer = () => {
   return (
     <div className="footerSection">
-      <div className="footer d-flex flex-row">
+      <Booking />
+      <div className="footer d-flex">
         <div className="d-flex flex-column">
-          Logo
+          <Image src={'/logo.svg'} height={100} width={100} alt={''} />
           <Link className="d-flex" href={"/"}>
             <AiOutlineInstagram />
             <p>Instagram</p>
