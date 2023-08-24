@@ -201,6 +201,9 @@ p {
   padding: 2rem 4rem;
   position: relative;
 }
+.footer{
+  justify-content: space-between;
+}
 .footer ul {
   list-style-type: none;
   padding: 0;
@@ -219,6 +222,10 @@ p {
   left: 0;
   width: 100%;
   align-self: center;
+}
+
+.copyrightSection p{
+  font-size: 0.9rem;
 }
 
 @media screen and (min-width: 1200px) {
