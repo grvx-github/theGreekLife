@@ -28,7 +28,7 @@ const Footer = () => {
           </form>
         </div>
         <div>
-          <h5>Services</h5>
+          <h5 className="font-weight-bold">Services</h5>
           <ul>
             <li>Holidays</li>
             <li>Yatchs</li>
@@ -37,7 +37,7 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h5>Events</h5>
+          <h5 className="font-weight-bold">Events</h5>
           <ul>
             <li>Bookings</li>
             <li>Gallery</li>
