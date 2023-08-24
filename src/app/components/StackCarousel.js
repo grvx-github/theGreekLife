@@ -1,25 +1,17 @@
 import React from "react";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Row, Col, Card } from "react-bootstrap"; // Importing specific components from react-bootstrap
 
-import { Container } from "react-bootstrap";
-
-const StackCarousel = () => {
+const StackCarousel = (props) => {
   return (
-    <Container className="d-flex">
-      <Row lg={3} sm={12}>
-        <Col className="d-flex">
-          <Image
-            src={props.icon}
-            width={500}
-            height={500}
-            alt=""
-          />
-					<h4 className="cardTitle">{props.title}</h4>
-					<p>{props.text}</p>
-        </Col>
+    <div>
+      <Row lg={3} md={3} sm={12}>
+          <Card style={{width: "100%", minHeight: "18rem", padding: "2rem", border: "none"}}>
+            {props.icon}
+            <h4 className="cardTitle">{props.title}</h4>
+            <p>{props.text}</p>
+          </Card>
       </Row>
-    </Container>
+    </div>
   );
 };
 

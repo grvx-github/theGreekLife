@@ -1,0 +1,117 @@
+.lBtn {
+  padding: 0.7rem 2rem !important;
+  justify-content: space-between;
+  align-items: center;
+  display: flex !important;
+  gap: 1rem !important;
+  border-radius: 5px !important;
+  background-color: #5bd9ff !important;
+  color: black !important;
+}
+.servicesSection {
+  /* background: url("../../public/servicesBG.png"); */
+  background-position: cover;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+.servicesSection .card {
+  background-color: transparent;
+  text-align: left;
+}
+.boatSection {
+  background: linear-gradient(0deg, #061d36, #061d36),
+    linear-gradient(0deg, #083461, #083461),
+    linear-gradient(
+      79.43deg,
+      #217bd8 -0.13%,
+      rgba(0, 0, 0, 0) 25.38%,
+      rgba(0, 0, 0, 0) 53.44%,
+      #217bd8 92.22%
+    );
+  padding: 2rem 4rem;
+  color: white;
+}
+.boatSection img {
+  width: 100% !important;
+  height: auto !important;
+}
+.boatSection a {
+  text-decoration: none;
+  color: #217bd8;
+  font-weight: 800;
+  display: block;
+}
+.weddingSection,
+.corporateSection {
+  color: white;
+  padding: 2rem 4rem;
+  gap: 2rem;
+}
+
+.weddingSection > img,
+.corporateSection > img {
+  width: 100%;
+  height: auto;
+}
+.weddingSection {
+  background: linear-gradient(0deg, #083461, #083461),
+    linear-gradient(
+      80.69deg,
+      #217bd8 5.5%,
+      rgba(0, 0, 0, 0) 33.48%,
+      rgba(0, 0, 0, 0) 57.97%,
+      #217bd8 95.96%
+    );
+}
+.corporateSection {
+  background: linear-gradient(0deg, #061d36, #061d36),
+    linear-gradient(0deg, #083461, #083461);
+}
+.poolImg img {
+  width: 100%;
+  height: auto;
+}
+.bookingSection {
+  background: linear-gradient(0deg, #083461, #083461),
+    linear-gradient(
+      80.69deg,
+      #217bd8 5.5%,
+      rgba(0, 0, 0, 0) 33.48%,
+      rgba(0, 0, 0, 0) 57.97%,
+      #217bd8 95.96%
+    );
+  padding: 2rem 4rem;
+  color: white;
+}
+.footerSection {
+  background: linear-gradient(0deg, #083461, #083461),
+    linear-gradient(
+      80.69deg,
+      #217bd8 5.5%,
+      rgba(0, 0, 0, 0) 33.48%,
+      rgba(0, 0, 0, 0) 57.97%,
+      #217bd8 95.96%
+    );
+	color: white;
+	padding: 2rem 4rem;
+	position: relative;
+	
+}
+.footer{
+	justify-content: space-between;
+}
+.footer ul{
+	list-style-type: none;
+	padding: 0;
+}
+.copyrightSection{
+	background-color: rgba(0, 0 , 0, 0.1);
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	align-self: center;
+}

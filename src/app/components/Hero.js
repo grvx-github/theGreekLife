@@ -21,7 +21,7 @@ const Hero = () => {
           ensuring every aspect of their journey is seamlessly coordinated and
           executed.
         </p>
-        <Button variant="dark">
+        <Button variant="dark" className="lBtn">
           More info <BsArrowRight />
         </Button>
       </div>
