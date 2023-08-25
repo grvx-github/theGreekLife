@@ -19,7 +19,11 @@ h1 {
   font-size: 4rem !important;
 }
 h2 {
-  font-size: 3rem;
+  font-size: 3rem !important;
+  margin-bottom: 2rem;
+}
+h3 {
+  font-weight: 700 !important;
 }
 h5 {
   font-size: 1.8rem;
@@ -56,12 +60,18 @@ p {
 .navbar-nav a {
   padding: 0 1rem;
 }
-
 .heroContainer {
-  background-image: url("../../public/heroBg.png");
   min-height: 99.9vh;
+  background: url("../../public/1.png"),
+    linear-gradient(
+      180deg,
+      #285672 0%,
+      rgba(0, 0, 0, 0) 33.85%,
+      rgba(0, 0, 0, 0) 75.52%,
+      #285672 100%
+    );
+  background-size: cover;
 }
-
 .heroCenter {
   justify-content: center;
   align-items: center;
@@ -105,10 +115,18 @@ p {
   color: white !important;
 }
 .servicesSection {
-  background: url("/vacation.jpg");
+  background: url("/2.png"),
+    linear-gradient(
+      91.16deg,
+      #217bd8 -1%,
+      rgba(0, 0, 0, 0) 16.09%,
+      rgba(0, 0, 0, 0) 74.76%,
+      #217bd8 102.1%
+    ),
+    linear-gradient(0deg, #ffffff, #ffffff);
   background-size: cover;
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 4rem 3rem;
   position: relative;
   color: white;
 }
@@ -124,11 +142,23 @@ p {
   left: 0;
   background: rgba(0, 0, 0, 0.3);
 }
+.servicesMview {
+  display: none;
+}
 .servicesSection h2 {
   z-index: 2;
+  position: relative;
+  margin-bottom: 4rem !important;
 }
-.servicesSection .container-fluid {
+.servicesSection button {
+  z-index: 2;
+  margin-top: 3rem;
+  margin-inline: auto;
+}
+.serviceDview {
   flex-direction: row;
+  gap: 2rem;
+  display: flex;
 }
 .servicesSection .card {
   background-color: transparent;
@@ -136,6 +166,19 @@ p {
   color: white;
   z-index: 2;
 }
+.serviceIcon {
+  color: #5bd9ff;
+  font-size: 3rem;
+}
+.servicesSection .card-title {
+  min-height: 3.8rem;
+  margin-top: 2rem;
+}
+.servicesSection .card-title h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
 .boatSection {
   background: url("/yatcchBG.png");
   background-size: cover;
@@ -143,17 +186,46 @@ p {
   color: white;
 }
 .filming {
-  background: url("/camera.jpg");
+  background: linear-gradient(
+      104.19deg,
+      #00c5ff -10%,
+      rgba(0, 0, 0, 0) 25%,
+      rgba(0, 0, 0, 0) 78.65%,
+      #00c5ff 110%
+    ),
+    url("/4.png");
   background-size: cover;
-  padding: 2rem 4rem;
+  padding: 4rem 3rem;
   color: white;
 }
 .filming .card {
   color: white;
 }
+.filming .container-fluid {
+  margin-top: 4rem;
+}
+.events h3 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
 .boatSection img {
+  background: linear-gradient(
+      80.69deg,
+      #217bd8 5.5%,
+      rgba(0, 0, 0, 0) 33.48%,
+      rgba(0, 0, 0, 0) 57.97%,
+      #217bd8 95.96%
+    ),
+    linear-gradient(0deg, #d9d9d9, #d9d9d9);
+  border-radius: 1rem;
   width: 100% !important;
-  height: auto !important;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.imgDv {
+  width: 100%;
+  padding: 4rem 2rem;
 }
 .boatSection a {
   text-decoration: none;
@@ -161,14 +233,27 @@ p {
   font-weight: 800;
   display: block;
 }
+.weddingSection {
+  background: linear-gradient(0deg, #083461, #083461),
+    linear-gradient(
+      80.69deg,
+      #217bd8 5.5%,
+      rgba(0, 0, 0, 0) 33.48%,
+      rgba(0, 0, 0, 0) 57.97%,
+      #217bd8 95.96%
+    );
+}
 .weddingSection,
-.corporateSection {
+.corpText {
   color: white;
-  padding: 2rem 4rem;
+  padding: 4rem;
   gap: 2rem;
 }
-.weddingSection > img,
-.corporateSection > img {
+.weddingFx {
+  gap: 2rem;
+}
+.weddingSection img,
+.corporateSection img {
   width: 100%;
   height: auto;
 }
@@ -199,19 +284,53 @@ p {
       rgba(0, 0, 0, 0) 57.97%,
       #217bd8 95.96%
     );
-  color: white;
+  padding: 4rem 3rem;
+  color: white !important;
+}
+.bookingSection h3 {
+  font-size: 2.5rem;
+  font-weight: 900 !important;
+  margin-bottom: 1.5rem !important;
 }
 .footerSection {
-  background: url("/footerBG.png");
+  background: url("/footerBG.png"), linear-gradient(0deg, #061d36, #061d36),
+    linear-gradient(0deg, #083461, #083461),
+    linear-gradient(
+      80.69deg,
+      #217bd8 5.5%,
+      rgba(0, 0, 0, 0) 33.48%,
+      rgba(0, 0, 0, 0) 57.97%,
+      #217bd8 95.96%
+    );
+
   background-size: cover;
   color: white;
-  padding: 2rem 4rem;
+  padding: 4rem 3rem;
   position: relative;
 }
 .footer {
   justify-content: space-between;
   width: 90%;
-  margin-right: auto;
+  margin-inline: auto;
+}
+.footer input {
+  height: 3rem;
+  outline: none;
+  border-radius: 4px;
+  padding: 1.5rem 1rem;
+  border: none;
+  background: #0000004d;
+}
+.footer button {
+  height: 3rem;
+  outline: none;
+  background-color: #0000004d;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  padding-right: 1rem;
+}
+.footer button svg {
+  stroke: white;
 }
 .footer a {
   text-decoration: none;
@@ -231,6 +350,16 @@ p {
 .footer ul li {
   margin-block-end: 1rem;
 }
+.footer h5 {
+  font-weight: 700 !important;
+  margin-bottom: 2rem !important;
+}
+.footer img {
+  width: 100%;
+}
+.fc1 {
+  gap: 2rem;
+}
 .copyrightSection {
   background-color: rgba(0, 0, 0, 0.6);
   display: flex;
@@ -241,12 +370,28 @@ p {
   left: 0;
   width: 100%;
   align-self: center;
+  padding: 1rem 0;
+}
+.copyrightInner {
+  width: 40%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .copyrightSection p {
   font-size: 0.9rem;
+  margin: 0 !important;
 }
-
+.t-muted {
+  opacity: 0.5;
+}
+@media screen and (min-width: 992px) {
+  header .navbar {
+    justify-content: space-between!important;
+    padding-left: 3rem!important;
+  }
+}
 @media screen and (min-width: 1200px) {
   h1 {
     font-size: 4.75rem !important;
@@ -261,13 +406,23 @@ p {
   p {
     font-size: 1.1rem;
   }
-
+  h1 {
+    font-size: 1.75rem !important;
+  }
+  .servicesMview {
+    display: block;
+  }
+  .serviceDview {
+    display: none !important;
+  }
   .heroCenter {
-    padding: 2rem;
+    padding: 1rem;
     width: 100%;
   }
-  .header .container-fluid {
+  .heroContainer > .navbar {
     flex-wrap: nowrap !important;
+    padding-inline: 3rem 0 !important;
+    justify-content: space-between !important;
   }
   .servicesSection .container-fluid {
     flex-direction: column;

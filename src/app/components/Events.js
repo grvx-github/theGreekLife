@@ -7,24 +7,29 @@ import ShowMoreBtn from "./ShowMoreBtn";
 const Events = () => {
   return (
     <div className="events">
-      <div className="weddingSection d-flex ">
-        <Image src={"/wedding.png"} height={100} width={100} alt="" />
-        <div className="weddingText">
-          <h3>Weddings</h3>
-          <p>
-            Welcome to the perfect destination for your dream wedding! Imagine
-            saying "I do" against the breathtaking backdrop of the stunning
-            Mediterranean Sea, surrounded by the beauty and romance that Greece
-            has to offer. Our team is dedicated to making your wedding day truly
-            unforgettable. <br /> <br />
-            With our expertise in destination weddings and our strong
-            partnership with luxury hotels and venues across Greece, we can help
-            you plan every detail of your special day. From finding the perfect
-            venue to arranging the finest catering and décor, our experienced
-            wedding planners will ensure that your vision comes to life.
-          </p>
-          <ShowMoreBtn />
+      <div className="weddingSection ">
+        <h3>Weddings</h3>
+        <div className="d-flex weddingFx">
+
+          <Image src={"/5.png"} height={100} width={100} alt="" />
+          <div className="weddingText">
+            <p>
+              Welcome to the perfect destination for your dream wedding! Imagine
+              saying "I do" against the breathtaking backdrop of the stunning
+              Mediterranean Sea, surrounded by the beauty and romance that Greece
+              has to offer. Our team is dedicated to making your wedding day truly
+              unforgettable. <br /> <br />
+              With our expertise in destination weddings and our strong
+              partnership with luxury hotels and venues across Greece, we can help
+              you plan every detail of your special day. From finding the perfect
+              venue to arranging the finest catering and décor, our experienced
+              wedding planners will ensure that your vision comes to life.
+            </p>
+            <ShowMoreBtn />
+          </div>
         </div>
+
+
       </div>
       <div className="corporateSection d-flex ">
         <div className="corpText">
@@ -41,11 +46,11 @@ const Events = () => {
           </p>
           <ShowMoreBtn />
         </div>
-        <Image src={"/corpEvent.png"} height={100} width={100} alt="" />
+        <Image src={"/6.png"} height={100} width={100} alt="" />
       </div>
       <div className='poolImg'>
-        <Image src={'/poolImg.jpg'} alt="" width={100} height={100} />
-    </div>
+        <Image src={'/7.png'} alt="" width={100} height={100} />
+      </div>
     </div>
   );
 };

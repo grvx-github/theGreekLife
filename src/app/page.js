@@ -8,6 +8,7 @@ import BoatSection from './components/BoatSection'
 import Filming from './components/Filming'
 import Events from './components/Events'
 import Footer from './components/Footer'
+import Booking from "./components/Booking";
 
 
 const helNeue = localFont({
@@ -37,6 +38,14 @@ const helNow = localFont({
     {
       path: '../../fonts/helveticaNow/HelveticaNowDisplay-Medium.woff',
       weight: '400'
+    },
+    {
+      path: '../../fonts/helveticaNow/HelveticaNowDisplay-Bold.woff',
+      weight: '700'
+    },
+    {
+      path: '../../fonts/helveticaNow/HelveticaNowDisplay-Black.woff',
+      weight: '900'
     }
   ]
 })
@@ -50,6 +59,7 @@ export default function Home() {
       <BoatSection />
       <Filming />
       <Events />
+      <Booking />
       <Footer />
     </div>
   )

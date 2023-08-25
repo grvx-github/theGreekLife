@@ -1,17 +1,20 @@
-import React from "react";
-import { Row, Col, Card } from "react-bootstrap"; // Importing specific components from react-bootstrap
+  import React from "react";
+  import { Card } from "react-bootstrap";
 
-const StackCarousel = (props) => {
-  return (
-    <div>
-      <Card style={{ width: "100%", minHeight: "18rem", padding: "2rem", border: "none", background: "transparent" }}>
-        
-        {props.icon}
-        <h4 className="cardTitle">{props.title}</h4>
-        <p>{props.text}</p>
-      </Card>
-    </div>
-  );
-};
+  const StackCarousel = (props) => {
+    return (
+      <div>
+        <Card style={{border: "none", background: 'transparent'}}>
+          {props.icon}
+          <Card.Title>
+            <h4>{props.title}</h4>
+          </Card.Title>
+          <Card.Text>
+            <p>{props.text}</p>
+          </Card.Text>
+        </Card>
+      </div>
+    );
+  };
 
-export default StackCarousel;
+  export default StackCarousel;

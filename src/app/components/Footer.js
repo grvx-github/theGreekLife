@@ -4,22 +4,21 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { BsArrowRight } from "react-icons/bs";
 import Copyright from "./Copyright";
 import Image from "next/image";
-import Booking from "./Booking";
+
 
 const Footer = () => {
   return (
     <div className="footerSection">
-      <Booking />
       <div className="footer d-flex">
-        <div className="d-flex flex-column">
+        <div className="d-flex flex-column fc1">
           <Image src={'/logo.svg'} height={100} width={100} alt={''} />
           <Link className="d-flex" href={"/"}>
             <AiOutlineInstagram />
             <p>Instagram</p>
           </Link>
-          <form action="/action_page.php">
-            <label for="email">Enter your email</label>
-            <input type="email" id="email" name="email" />
+          <form action="/">
+            
+            <input type="email" id="email" name="email"  placeholder="Enter your email"/>
 
             <button type="submit">
               {" "}
