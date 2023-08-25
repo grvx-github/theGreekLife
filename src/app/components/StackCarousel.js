@@ -5,6 +5,7 @@ const StackCarousel = (props) => {
   return (
     <div>
       <Card style={{ width: "100%", minHeight: "18rem", padding: "2rem", border: "none", background: "transparent" }}>
+        
         {props.icon}
         <h4 className="cardTitle">{props.title}</h4>
         <p>{props.text}</p>

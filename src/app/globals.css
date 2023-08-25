@@ -1,26 +1,22 @@
-@font-face {
-  font-family: "helveticaNeue";
-  src: url("/fonts/helvetica-neue/HelveticaNeue-Medium.otf");
-  font-style: normal;
-  font-weight: normal;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-@font-face {
-  font-family: "helveticaNow";
-  src: url("../../fonts/helveticaNow/HelveticaNowDisplay-Regular.eot");
-
-  font-style: normal;
-  font-weight: normal;
+html {
+  scroll-behavior: smooth;
 }
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "helveticaNow";
-  font-weight: normal;
+body {
+  overflow-x: hidden;
 }
 h1 {
-  font-size: 4rem;
+  font-weight: 200 !important;
+}
+h2 {
+  font-weight: 300 !important;
+}
+h1 {
+  font-size: 4rem !important;
 }
 h2 {
   font-size: 3rem;
@@ -34,12 +30,10 @@ h5 {
   height: auto;
 }
 p {
+  font-weight: 300 !important;
   font-size: 1.2rem;
-  line-height: 1.5rem;
-}
-.heroContainer p {
-  font-family: "helveticaNeue" !important;
-  font-weight: normal;
+  line-height: 1.75rem;
+  letter-spacing: 1px;
 }
 
 /* Utility Classes */
@@ -53,11 +47,14 @@ p {
   );
 }
 .navbar-nav {
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding-inline: 2rem;
 }
-
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
 .navbar-nav a {
-  padding: 0 1rem !important;
+  padding: 0 1rem;
 }
 
 .heroContainer {
@@ -68,15 +65,20 @@ p {
 .heroCenter {
   justify-content: center;
   align-items: center;
+  height: 500px;
   text-align: center;
   color: white;
   padding: 2rem 4rem;
   width: 90%;
-  margin: 15% auto 0;
+  margin: auto;
   gap: 1rem;
 }
-
-.lBtn {
+.heroCenter p {
+  width: 90%;
+  margin-inline: auto;
+}
+.lBtn,
+.heroBtn {
   padding: 0.7rem 2rem !important;
   justify-content: space-between;
   align-items: center;
@@ -96,6 +98,11 @@ p {
     rgba(74, 74, 74, 0.2) 15px, rgba(240, 46, 170, 0.1) 20px 20px,
     rgba(240, 46, 170, 0.05) 25px 25px;
   z-index: 9;
+}
+.heroBtn {
+  margin-top: 2rem !important;
+  background-color: #000000 !important;
+  color: white !important;
 }
 .servicesSection {
   background: url("/vacation.jpg");
@@ -201,17 +208,17 @@ p {
   padding: 2rem 4rem;
   position: relative;
 }
-.footer{
+.footer {
   justify-content: space-between;
   width: 90%;
   margin-right: auto;
 }
-.footer a{
+.footer a {
   text-decoration: none;
   color: inherit;
   align-items: center;
 }
-.footer a>p{
+.footer a > p {
   margin: 0;
   padding-left: 1rem;
   font-size: 1.5rem;
@@ -221,7 +228,7 @@ p {
   padding: 0;
   gap: 1rem;
 }
-.footer ul li{
+.footer ul li {
   margin-block-end: 1rem;
 }
 .copyrightSection {
@@ -236,13 +243,13 @@ p {
   align-self: center;
 }
 
-.copyrightSection p{
+.copyrightSection p {
   font-size: 0.9rem;
 }
 
 @media screen and (min-width: 1200px) {
   h1 {
-    font-size: 4rem;
+    font-size: 4.75rem !important;
   }
   h2 {
     font-size: 3rem;
@@ -251,7 +258,7 @@ p {
 }
 
 @media screen and (max-width: 746px) {
-  p{
+  p {
     font-size: 1.1rem;
   }
 
@@ -265,41 +272,41 @@ p {
   .servicesSection .container-fluid {
     flex-direction: column;
   }
-  .servicesSection{
+  .servicesSection {
     padding: 4rem 0;
   }
-  .boatSection{
+  .boatSection {
     padding: 2rem;
   }
-  .filming{
+  .filming {
     padding: 2rem;
   }
-  .filming .flex-row{
-    flex-direction: column!important;
+  .filming .flex-row {
+    flex-direction: column !important;
   }
-  .flex-row{
-    flex-direction: column!important;
+  .flex-row {
+    flex-direction: column !important;
   }
-  .weddingSection, .corporateSection{
+  .weddingSection,
+  .corporateSection {
     padding: 2rem;
-    flex-direction: column!important;
+    flex-direction: column !important;
   }
   .footer {
-    flex-direction: column!important;
+    flex-direction: column !important;
   }
-  .footerSection{
+  .footerSection {
     padding: 2rem;
   }
-  .bookingSection{
+  .bookingSection {
     padding: 1rem;
     background: transparent;
   }
-  .copyrightSection{
+  .copyrightSection {
     bottom: 0;
     font-size: 0.8rem;
   }
-  .copyrightSection p{
+  .copyrightSection p {
     font-size: 0.8rem;
   }
-  
 }

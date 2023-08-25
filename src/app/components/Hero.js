@@ -1,13 +1,11 @@
 "use client"
 
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Container from "react-bootstrap/Container";
-import styles from "../styles/hero.module.css";
-import { Button } from "react-bootstrap";
-import { BsArrowRight } from "react-icons/bs";
+// import "bootstrap/dist/css/bootstrap.min.css";
+import { Container, Button } from "react-bootstrap";
 import Header from "./Header";
-import ShowMoreBtn from "./ShowMoreBtn";
+import { BsArrowRight } from 'react-icons/bs'
+
 
 const Hero = () => {
   return (
@@ -22,7 +20,7 @@ const Hero = () => {
           ensuring every aspect of their journey is seamlessly coordinated and
           executed.
         </p>
-        <ShowMoreBtn />
+        <Button className="heroBtn"> More Info <BsArrowRight /> </Button>
       </div>
     </Container>
   );
