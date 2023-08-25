@@ -11,7 +11,7 @@ const Footer = () => {
     <div className="footerSection">
       <div className="footer d-flex">
         <div className="d-flex flex-column fc1">
-          <Image src={'/logo.svg'} height={100} width={100} alt={''} />
+          <Image src={'/logoWhite.svg'} height={100} width={100} alt={''} />
           <Link className="d-flex" href={"/"}>
             <AiOutlineInstagram />
             <p>Instagram</p>

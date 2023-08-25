@@ -409,6 +409,9 @@ p {
   h1 {
     font-size: 1.75rem !important;
   }
+  header .navbar{
+    flex-wrap: nowrap!important;
+  }
   .servicesMview {
     display: block;
   }

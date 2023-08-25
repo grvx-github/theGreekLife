@@ -7,7 +7,9 @@ import { Container } from "react-bootstrap";
 import { Nav, Row, Col } from "react-bootstrap";
 import { IconContext } from "react-icons";
 import ShowMoreBtn from "./ShowMoreBtn";
-import { useState } from "react";
+
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
 
 const Services = () => {
 
@@ -39,23 +41,25 @@ const Services = () => {
           })}
         </div>
         <div className="servicesMview" >
-          <Nav fill variant="pills" defaultActiveKey={activeTab}>
-            {servicesData.map((entry, index) => {
-              return (
-                <div>
-                  <Nav.Item key={index}>
-                    <Nav.Link eventKey={index} onSelect={() => setActiveTab(index)}>
-                      {entry.icon}
-                    </Nav.Link>
-                  </Nav.Item>
-                </div>
-              )
-            })}
-          </Nav>
-          <div className="active-service">
-            <h3>{servicesData[activeTab].title}</h3>
-            <p>{servicesData[activeTab].text}</p>
-          </div>
+          <Tabs
+            id="controlled-tab-example"
+            activeKey={key}
+            onSelect={(k) => setKey(k)}
+            className="mb-3"
+          >
+            <Tab eventKey="home" title="Home">
+              Tab content for Home
+            </Tab>
+            <Tab eventKey="profile" title="Profile">
+              Tab content for Profile
+            </Tab>
+            <Tab eventKey="contact" title="Contact">
+              Tab content for Contact
+            </Tab>
+            <Tab eventKey="profile" title="Profile">
+              Tab content for Profile
+            </Tab>
+          </Tabs>
         </div>
       </Container>
       <ShowMoreBtn />
