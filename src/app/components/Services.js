@@ -4,27 +4,28 @@ import React from "react";
 import StackCarousel from "./StackCarousel";
 import servicesData from "../servicesData";
 import { Container } from "react-bootstrap";
-import { Nav, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import { IconContext } from "react-icons";
 import ShowMoreBtn from "./ShowMoreBtn";
+import { useState } from "react";
 
-import Tab from 'react-bootstrap/Tab';
-import Tabs from 'react-bootstrap/Tabs';
+import Tab from "react-bootstrap/Tab";
+import Tabs from "react-bootstrap/Tabs";
 
 const Services = () => {
-
-  const [activeTab, setActiveTab] = useState(0);
+  const [active, setActive] = useState(0);
+  
 
   return (
     <div className="servicesSection">
       <h2>Our Range of Services Include </h2>
       <Container fluid>
-        <div className="serviceDview">
+        <div className="dView">
           {servicesData.map((entry, i) => {
             return (
-              <Row >
+              <Row>
                 <Col>
-                  <IconContext.Provider value={{ className: 'serviceIcon' }}>
+                  <IconContext.Provider value={{ className: "serviceIcon" }}>
                     <StackCarousel
                       className="serviceCard"
                       key={i}
@@ -32,7 +33,6 @@ const Services = () => {
                       title={entry.title}
                       p
                       text={entry.text}
-                      show={i === activeTab}
                     />
                   </IconContext.Provider>
                 </Col>
@@ -40,26 +40,26 @@ const Services = () => {
             );
           })}
         </div>
-        <div className="servicesMview" >
-          <Tabs
-            id="controlled-tab-example"
-            activeKey={key}
-            onSelect={(k) => setKey(k)}
-            className="mb-3"
-          >
-            <Tab eventKey="home" title="Home">
-              Tab content for Home
-            </Tab>
-            <Tab eventKey="profile" title="Profile">
-              Tab content for Profile
-            </Tab>
-            <Tab eventKey="contact" title="Contact">
-              Tab content for Contact
-            </Tab>
-            <Tab eventKey="profile" title="Profile">
-              Tab content for Profile
-            </Tab>
-          </Tabs>
+        <div className="mView">
+          <div className="d-flex iconNav">
+            {servicesData.map((entry, i) => {
+              return (
+                <div
+                  className={(i == active) ? "activeTab mob-icon" : "mob-icon" }
+                  key={i}
+                  onClick={() => {
+                    setActive(i);
+                  }}
+                >
+                  {entry.icon}
+                </div>
+              );
+            })}
+          </div>
+          <div className="tabContent">
+            <h4>{servicesData[active].title}</h4>
+            <p>{servicesData[active].text}</p>
+          </div>
         </div>
       </Container>
       <ShowMoreBtn />

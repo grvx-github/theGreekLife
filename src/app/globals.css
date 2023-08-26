@@ -142,7 +142,7 @@ p {
   left: 0;
   background: rgba(0, 0, 0, 0.3);
 }
-.servicesMview {
+.mView {
   display: none;
 }
 .servicesSection h2 {
@@ -155,7 +155,7 @@ p {
   margin-top: 3rem;
   margin-inline: auto;
 }
-.serviceDview {
+.dView {
   flex-direction: row;
   gap: 2rem;
   display: flex;
@@ -360,6 +360,28 @@ p {
 .fc1 {
   gap: 2rem;
 }
+.mob-icon {
+  padding: 1rem;
+  border: 1px solid #00c5ff;
+}
+.mob-icon svg {
+  color: #00c5ff;
+  height: 2.5rem;
+  width: 2.5rem;
+  z-index: 3;
+  position: relative;
+}
+.iconNav {
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.activeTab{
+  background-color: #00c5ff;
+}
+.activeTab svg{
+  color: #000000;
+}
 .copyrightSection {
   background-color: rgba(0, 0, 0, 0.6);
   display: flex;
@@ -388,8 +410,8 @@ p {
 }
 @media screen and (min-width: 992px) {
   header .navbar {
-    justify-content: space-between!important;
-    padding-left: 3rem!important;
+    justify-content: space-between !important;
+    padding-left: 3rem !important;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -409,13 +431,13 @@ p {
   h1 {
     font-size: 1.75rem !important;
   }
-  header .navbar{
-    flex-wrap: nowrap!important;
+  header .navbar {
+    flex-wrap: nowrap !important;
   }
-  .servicesMview {
+  .mView {
     display: block;
   }
-  .serviceDview {
+  .dView {
     display: none !important;
   }
   .heroCenter {
@@ -466,5 +488,26 @@ p {
   }
   .copyrightSection p {
     font-size: 0.8rem;
+  }
+  .imgDv {
+    padding: 2rem 0;
+    position: relative;
+  }
+  .imgDv img {
+    height: auto;
+    object-fit: cover;
+  }
+  .filming .container-fluid {
+    margin-top: 2rem;
+  }
+  .weddingFx {
+    flex-direction: column;
+  }
+  .corpText {
+    padding: 0;
+  }
+  .corpText img{
+
+    margin-top: 2rem;
   }
 }
