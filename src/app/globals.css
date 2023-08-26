@@ -421,6 +421,9 @@ p {
   width: 100%;
   margin-bottom: 2rem;
 }
+.footer.mView{
+  display: none;
+}
 .activeTab {
   background-color: #5bd9ff;
 }
@@ -648,6 +651,9 @@ p {
   }
   .footerTop {
     position: relative;
+  }
+  .footer .mView{
+    display: flex;
   }
   .footerTop::after {
     content: "";
