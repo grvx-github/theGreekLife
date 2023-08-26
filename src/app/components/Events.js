@@ -7,7 +7,7 @@ import ShowMoreBtn from "./ShowMoreBtn";
 const Events = () => {
   return (
     <div className="events">
-      <div className="weddingSection ">
+      <div className="weddingSection m-lg2">
         <h3>Weddings</h3>
         <div className="d-flex weddingFx">
 
@@ -31,7 +31,7 @@ const Events = () => {
 
 
       </div>
-      <div className="corporateSection d-flex ">
+      <div className="corporateSection d-flex m-lg">
         <div className="corpText">
           <h3>Corporate Events and Other Events</h3>
           <p>

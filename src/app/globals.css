@@ -3,6 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "helNeue";
+  src: url("../../fonts/helvetica-neue/HelveticaNeueLight.ttf");
+}
 html {
   scroll-behavior: smooth;
 }
@@ -41,6 +45,22 @@ p {
 }
 
 /* Utility Classes */
+@media screen and (max-width: 991.98px) {
+  .offcanvas-lg {
+    background: url("/footerBG.png") !important;
+    background-size: cover !important;
+    color: white !important;
+    font-family: helNeue;
+    font-size: 1.1rem !important;
+  }
+  .offcanvas-header {
+    padding-inline: 2rem !important;
+  }
+  .btn-close {
+    margin-inline: auto 0 !important;
+  }
+}
+
 .bg-pg {
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -56,6 +76,12 @@ p {
 }
 .navbar-collapse {
   flex-grow: 0 !important;
+}
+.navbar-toggler {
+  border: none !important;
+}
+.navbar-toggler-icon {
+  background-image: url("/navbarToggler.svg") !important;
 }
 .navbar-nav a {
   padding: 0 1rem;
@@ -167,7 +193,7 @@ p {
   z-index: 2;
 }
 .serviceIcon {
-  color: #5bd9ff;
+  color: 5bd9ff;
   font-size: 3rem;
 }
 .servicesSection .card-title {
@@ -188,10 +214,10 @@ p {
 .filming {
   background: linear-gradient(
       104.19deg,
-      #00c5ff -10%,
+      #5bd9ff -10%,
       rgba(0, 0, 0, 0) 25%,
       rgba(0, 0, 0, 0) 78.65%,
-      #00c5ff 110%
+      #5bd9ff 110%
     ),
     url("/4.png");
   background-size: cover;
@@ -312,9 +338,11 @@ p {
   justify-content: space-between;
   width: 90%;
   margin-inline: auto;
+  display: flex;
 }
 .footer input {
   height: 3rem;
+  width: 88.59%;
   outline: none;
   border-radius: 4px;
   padding: 1.5rem 1rem;
@@ -336,6 +364,13 @@ p {
   text-decoration: none;
   color: inherit;
   align-items: center;
+  justify-content: center;
+  height: 3rem;
+  vertical-align: middle;
+}
+.footer a svg {
+  width: 2.5rem;
+  height: 2.5rem;
 }
 .footer a > p {
   margin: 0;
@@ -360,12 +395,15 @@ p {
 .fc1 {
   gap: 2rem;
 }
+.boatSection h3 {
+  font-weight: 700 !important;
+}
 .mob-icon {
   padding: 1rem;
-  border: 1px solid #00c5ff;
+  border: 1px solid #5bd9ff;
 }
 .mob-icon svg {
-  color: #00c5ff;
+  color: #5bd9ff;
   height: 2.5rem;
   width: 2.5rem;
   z-index: 3;
@@ -376,11 +414,21 @@ p {
   width: 100%;
   margin-bottom: 2rem;
 }
-.activeTab{
-  background-color: #00c5ff;
+.activeTab {
+  background-color: #5bd9ff;
 }
-.activeTab svg{
+.activeTab svg {
   color: #000000;
+}
+.instabox {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-block: 2rem;
+}
+.instabox > div:nth-child(1) {
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.17);
 }
 .copyrightSection {
   background-color: rgba(0, 0, 0, 0.6);
@@ -427,9 +475,25 @@ p {
 @media screen and (max-width: 746px) {
   p {
     font-size: 1.1rem;
+    text-align: center;
+  }
+  button {
+    margin-inline: auto !important;
   }
   h1 {
     font-size: 1.75rem !important;
+  }
+  h2 {
+    font-size: 1.5rem !important;
+    text-align: center;
+  }
+  .events h3 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  .bookingSection h3 {
+    font-size: 2.2rem;
+    text-align: center;
   }
   header .navbar {
     flex-wrap: nowrap !important;
@@ -441,6 +505,7 @@ p {
     display: none !important;
   }
   .heroCenter {
+    margin-top: 2.5rem;
     padding: 1rem;
     width: 100%;
   }
@@ -454,6 +519,25 @@ p {
   }
   .servicesSection {
     padding: 4rem 0;
+    background: linear-gradient(
+        54deg,
+        #217bd8 0%,
+        rgba(0, 0, 0, 0) 51.56%,
+        #217bd8 100%
+      ),
+      url("/2.png"), lightgray 50% / cover no-repeat;
+  }
+  .servicesSection h2 {
+    margin-bottom: 2rem !important;
+    font-weight: 700 !important;
+    color: #5bd9ff;
+  }
+  .filming h2 {
+    color: #5bd9ff;
+  }
+  .events h2,
+  .bookingSection h2 {
+    font-weight: 900 !important;
   }
   .boatSection {
     padding: 2rem;
@@ -479,8 +563,7 @@ p {
     padding: 2rem;
   }
   .bookingSection {
-    padding: 1rem;
-    background: transparent;
+    padding: 2rem 1rem;
   }
   .copyrightSection {
     bottom: 0;
@@ -496,6 +579,7 @@ p {
   .imgDv img {
     height: auto;
     object-fit: cover;
+    display: none;
   }
   .filming .container-fluid {
     margin-top: 2rem;
@@ -506,8 +590,111 @@ p {
   .corpText {
     padding: 0;
   }
-  .corpText img{
-
+  .corporateSection img {
     margin-top: 2rem;
+  }
+  .imgDv h3 {
+    position: relative;
+    text-align: center;
+    font-size: 1.5rem;
+    z-index: 3;
+  }
+  .boatSection {
+    background-image: url("/3.png");
+    background-size: cover;
+    position: relative;
+  }
+  .boatSection > * {
+    position: relative;
+    z-index: 4;
+  }
+  .boatSection::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+  }
+  .boatSection .textDiv {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+  }
+  .footerSection {
+    padding: 2rem 0 0;
+  }
+  .footer {
+    display: flex;
+    gap: 2rem;
+  }
+  .footer p {
+    text-align: left;
+    font-size: 1rem !important;
+  }
+  .footer img {
+    width: 80%;
+    margin-right: auto;
+    height: auto;
+    margin-bottom: 3rem;
+  }
+  .footerTop {
+    position: relative;
+  }
+  .footerTop::after {
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    margin-inline: auto;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  .footer h4 {
+    font-size: 1.1rem !important;
+  }
+  .footerBottom {
+    justify-content: space-between !important;
+  }
+  .copyrightSection {
+    position: relative;
+  }
+  .copyrightInner {
+    width: 100%;
+    justify-content: space-around;
+    padding-inline: 1rem;
+  }
+  .m-lg {
+    background: linear-gradient(
+        180deg,
+        #217bd8 0%,
+        rgba(33, 123, 216, 0) 45.31%,
+        rgba(33, 123, 216, 0) 94.79%,
+        #217bd8 100%
+      ),
+      #083461;
+  }
+  .m-lg2 {
+    background: linear-gradient(
+        180deg,
+        #217bd8 0%,
+        rgba(33, 123, 216, 0) 45.31%,
+        rgba(33, 123, 216, 0) 94.79%,
+        #217bd8 100%
+      ),
+      #083461;
+  }
+  .m-lg3 {
+    background: linear-gradient(
+        208deg,
+        #217bd8 0%,
+        rgba(33, 123, 216, 0) 14.06%,
+        rgba(33, 123, 216, 0) 76.41%,
+        #217bd8 100%
+      ),
+      url("/2.png"), lightgray 50% / cover no-repeat;
   }
 }

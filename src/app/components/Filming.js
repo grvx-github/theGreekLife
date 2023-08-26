@@ -11,7 +11,7 @@ const Filming = () => {
   const [active, setActive] = useState(2);
 
   return (
-    <div className="filming">
+    <div className="filming m-lg3">
       <h2>Filming In Greece</h2>
       <div className="dView">
         <Container fluid className="d-flex flex-row">
