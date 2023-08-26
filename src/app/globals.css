@@ -252,6 +252,13 @@ p {
 .imgDv {
   width: 100%;
   padding: 4rem 2rem;
+  position: relative;
+}
+.imgDv h3{
+  position: absolute;
+  top: 5.5rem;
+  left: 4rem;
+  font-size: 2rem;
 }
 .boatSection a {
   text-decoration: none;
