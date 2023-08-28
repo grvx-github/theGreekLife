@@ -6,20 +6,32 @@ import servicesData from "../servicesData";
 import { Container } from "react-bootstrap";
 import { Row, Col } from "react-bootstrap";
 import { IconContext } from "react-icons";
-import ShowMoreBtn from "./ShowMoreBtn";
 import { useState } from "react";
+import { Button } from 'react-bootstrap'
+import { BsArrowDown } from "react-icons/bs"
 
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 
 const Services = () => {
   const [active, setActive] = useState(0);
-  
+
+  const [clicked, setClicked] = useState(false)
+
+  function handleClick() {
+    setClicked(!clicked)
+  }
+  const containerStyle = {
+    maxHeight: clicked ? '30rem' : '18rem', // Adjust the max height values as needed
+    overflow: clicked ? 'visible' : 'hidden',
+    transition: ' 0.75s ease all' // Apply the transition to max-height property
+  };
+
 
   return (
     <div className="servicesSection">
       <h2>Our Range of Services Include </h2>
-      <Container fluid>
+      <Container fluid style={containerStyle  }>
         <div className="dView">
           {servicesData.map((entry, i) => {
             return (
@@ -45,7 +57,7 @@ const Services = () => {
             {servicesData.map((entry, i) => {
               return (
                 <div
-                  className={(i == active) ? "activeTab mob-icon" : "mob-icon" }
+                  className={(i == active) ? "activeTab mob-icon" : "mob-icon"}
                   key={i}
                   onClick={() => {
                     setActive(i);
@@ -56,13 +68,13 @@ const Services = () => {
               );
             })}
           </div>
-          <div className="tabContent">
+          <div className="tabContent" style={{ overflow: "hidden" }}>
             <h4>{servicesData[active].title}</h4>
             <p>{servicesData[active].text}</p>
           </div>
         </div>
       </Container>
-      <ShowMoreBtn />
+      <Button onClick={handleClick} className={clicked ? "lBtn clicked" : "lBtn"}>{clicked ? 'show more' : 'show less'}  < BsArrowDown /> </Button>
     </div>
   );
 };

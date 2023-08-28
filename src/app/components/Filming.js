@@ -6,15 +6,29 @@ import filmingData from "../filmingData";
 import { Container } from "react-bootstrap";
 import { IconContext } from "react-icons";
 import { useState } from "react";
+import { Button } from 'react-bootstrap'
+import { BsArrowDown } from "react-icons/bs"
 
 const Filming = () => {
-  const [active, setActive] = useState(2);
+
+  const [active, setActive] = useState(0);
+
+  const [clicked, setClicked] = useState(false)
+
+  function handleClick() {
+    setClicked(!clicked)
+  }
+  const containerStyle = {
+    maxHeight: clicked ? '30rem' : '13rem', // Adjust the max height values as needed
+    overflow: clicked ? 'visible' : 'hidden',
+    transition: ' 0.9s ease all' // Apply the transition to max-height property
+  };
 
   return (
-    <div className="filming m-lg3">
+    <section className="filming m-lg3">
       <h2>Filming In Greece</h2>
       <div className="dView">
-        <Container fluid className="d-flex flex-row">
+        <Container fluid className="d-flex flex-row" style={containerStyle}>
           <IconContext.Provider value={{ color: "#5BD9FF", size: "50px" }}>
             {filmingData.map((entry, i) => {
               return (
@@ -22,7 +36,11 @@ const Filming = () => {
               );
             })}
           </IconContext.Provider>
+
+
         </Container>
+
+        <Button onClick={handleClick} className={clicked ? "lBtn clicked" : "lBtn"}>{clicked ? 'show more' : 'show less'}  < BsArrowDown /> </Button>
       </div>
       <div className="mView">
         <Container fluid>
@@ -38,9 +56,11 @@ const Filming = () => {
           <div className="tabContent">
             <p>{filmingData[active].text}</p>
           </div>
+
+          <Button onClick={handleClick} className={clicked ? "lBtn clicked" : "lBtn"}>{clicked ? 'show more' : 'show less'}  < BsArrowDown /> </Button>
         </Container>
       </div>
-    </div>
+    </section>
   );
 };
 

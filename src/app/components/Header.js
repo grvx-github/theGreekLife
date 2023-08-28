@@ -19,7 +19,7 @@ const Header = () => {
 			<Navbar bg='transparent' data-bs-theme="dark" expand="lg">
 
 				<Navbar.Brand href="#home">
-					<Image src={'/logoWhite.svg'} alt='' height={50} width={50} />
+					<Image src={'/logoWhite.svg'} alt='' height={50} width={50} className='logoImg'/>
 				</Navbar.Brand>
 				
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={handleShow}/>

@@ -24,6 +24,14 @@ const Events = () => {
               you plan every detail of your special day. From finding the perfect
               venue to arranging the finest catering and décor, our experienced
               wedding planners will ensure that your vision comes to life.
+              <br /><br />
+              Whether you prefer glamourous beachside ceremony in Mykonos or a romantic hilltop celebration in Santorini, Greece offers a wide range of enchanting locations for your dream wedding. With its picturesque landscapes, rich history, and warm hospitality, Greece provides a magical setting that will create memories  to last a lifetime.
+
+              <br /> <br />
+              We offer customizable wedding packages that can be tailored to your specific desires and preferences. From intimate elopements to  grand celebrations, we have the expertise to expertise to bring your dream wedding to fruition.
+
+              <br /><br />
+              let us take care of all the details, so you can focus on the precious memories with your loved ones.
             </p>
             <ShowMoreBtn />
           </div>
@@ -43,6 +51,8 @@ const Events = () => {
             facilities and accommodation options suitable for groups of any
             size. From modern conference centers to luxurious resorts, we have
             the perfect setting to host your event.
+            <br /><br />
+
           </p>
           <ShowMoreBtn />
         </div>
