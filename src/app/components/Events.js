@@ -104,7 +104,7 @@ const Events = () => {
             </p>
           </div>
 
-          <Button onClick={handleClick} className={clicked ? "lBtn clicked" : "lBtn"}>{clicked ? 'show less' : 'show more'}  < BsArrowDown style={clicked ? arrowClicked : arrowUnClicked} /> </Button>
+          <Button onClick={handleCorpClick} className={clicked ? "lBtn clicked" : "lBtn"}>{clicked ? 'show less' : 'show more'}  < BsArrowDown style={clicked ? arrowClicked : arrowUnClicked} /> </Button>
         </div>
         <Image src={"/6.png"} height={100} width={100} alt="" />
       </div>
