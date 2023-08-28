@@ -364,6 +364,26 @@ header .navbar-brand {
       #217bd8 95.96%
     );
 }
+.wedding {
+  max-height: 17.75rem;
+  overflow: hidden;
+  transition: 0.75s ease all;
+}
+.weddingClicked {
+  max-height: 35rem;
+  overflow: visible;
+  transition: 0.75s ease all;
+}
+.corp {
+  max-height: 18.25rem;
+  overflow: hidden;
+  transition: 0.75s ease all;
+}
+.corpClicked {
+  max-height: 42rem;
+  overflow: visible;
+  transition: 0.75s ease all;
+}
 /* Wdding */
 
 /* Corop section */
@@ -394,6 +414,16 @@ header .navbar-brand {
   font-size: 2.5rem;
   font-weight: 900 !important;
   margin-bottom: 1.5rem !important;
+}
+.buc {
+  max-height: 2rem;
+  overflow: hidden;
+  transition: 0.75s ease all;
+}
+.bClicked {
+  max-height: 19.5rem;
+  transition: 0.75s ease all;
+  overflow: visible;
 }
 /* Booking */
 
@@ -670,13 +700,42 @@ header .navbar-brand {
   .flex-row {
     flex-direction: column !important;
   }
-  .weddingSection,
-  .corporateSection {
+  .weddingSection {
     padding: 2rem;
     flex-direction: column !important;
   }
+  .corporateSection {
+    flex-direction: column-reverse !important;
+    padding: 2rem;
+  }
+  .corporateSection img {
+    margin-bottom: 2rem;
+  }
   .weddingSection button {
     margin-inline: auto;
+  }
+  .wedding {
+    max-height: 12.5rem;
+    overflow: hidden;
+    transition: 0.75s ease all;
+  }
+  .weddingClicked {
+    max-height: 70rem;
+    overflow: visible;
+    transition: 0.75s ease all;
+  }
+  .corpText button {
+    margin-inline: auto;
+  }
+  .corp {
+    max-height: 18.25rem;
+    overflow: hidden;
+    transition: 0.75s ease all;
+  }
+  .corpClicked {
+    max-height: 72.5rem;
+    overflow: visible;
+    transition: 0.75s ease all;
   }
   .footer {
     flex-direction: column !important;
@@ -686,6 +745,10 @@ header .navbar-brand {
   }
   .bookingSection {
     padding: 2rem 1rem;
+  }
+  .bClicked {
+    max-height: 56rem;
+    overflow: visible;
   }
   .copyrightSection {
     bottom: 0;
@@ -741,6 +804,9 @@ header .navbar-brand {
     top: 0;
     left: 0;
   }
+  .bookingSection button {
+    margin-inline: auto;
+  }
   .boatSection .textDiv {
     position: relative;
     z-index: 5;
@@ -749,7 +815,7 @@ header .navbar-brand {
   .footerSection {
     padding: 2rem 0 0;
   }
-  .footer {
+  .footer.mView{
     display: flex;
     gap: 2rem;
   }

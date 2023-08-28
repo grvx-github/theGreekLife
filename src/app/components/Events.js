@@ -8,7 +8,6 @@ import { useState } from "react";
 import { BsArrowDown } from "react-icons/bs";
 
 const Events = () => {
-  const [active, setActive] = useState(0);
 
   const [clicked, setClicked] = useState(false);
   const [corpClicked, setCorpClicked] = useState(false);
@@ -17,20 +16,11 @@ const Events = () => {
     setClicked(!clicked);
   }
 
-  function coprClicked(){
+  function handleCorpClick(){
     setCorpClicked(!corpClicked)
   }
 
-  const corpContainer = {
-    maxHeight: clicked ? "42rem" : "18.25rem", // Adjust the max height values as needed
-    overflow: clicked ? "visible" : "hidden",
-    transition: " 0.75s ease all",
-  };
-  const containerStyle = {
-    maxHeight: clicked ? "35rem" : "17.75rem", // Adjust the max height values as needed
-    overflow: clicked ? "visible" : "hidden",
-    transition: " 0.75s ease all", // Apply the transition to max-height property
-  };
+
   return (
     <div className="events">
       <div className="weddingSection m-lg2">
@@ -38,7 +28,7 @@ const Events = () => {
         <div className="d-flex weddingFx">
           <Image src={"/5.png"} height={100} width={100} alt="" />
           <div className="weddingText">
-            <div style={containerStyle}>
+            <div className={clicked ? 'weddingClicked' : 'wedding'}>
               <p>
                 Welcome to the perfect destination for your dream wedding!
                 Imagine saying "I do" against the breathtaking backdrop of the
@@ -81,7 +71,7 @@ const Events = () => {
       </div>
       <div className="corporateSection d-flex m-lg">
         <div className="corpText">
-          <div className={clicked ? }>
+          <div className={corpClicked ? 'corpClicked' : 'corp'}>
             <h3>Corporate Events and Other Events</h3>
             <p>
               - Elevate your next corporate event, conference, or incentive trip
@@ -114,10 +104,10 @@ const Events = () => {
           </div>
 
           <Button
-            onClick={handleClick}
-            className={clicked ? "lBtn clicked" : "lBtn"}
+            onClick={handleCorpClick}
+            className={corpClicked ? "lBtn clicked" : "lBtn"}
           >
-            {clicked ? "show more" : "show less"} <BsArrowDown />{" "}
+            {corpClicked ? "show more" : "show less"} <BsArrowDown />{" "}
           </Button>
         </div>
         <Image src={"/6.png"} height={100} width={100} alt="" />
