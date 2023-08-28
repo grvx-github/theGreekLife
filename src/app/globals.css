@@ -592,7 +592,10 @@ section {
     font-size: 1.1rem !important;
     width: 50% !important;
     border: none !important;
-    top: 1.5rem !important;
+    border-radius: 20px 0 0 20px!important;
+  }
+  .offcanvas-lg .navbar-nav{
+    margin-top: 2rem;
   }
   .offcanvas-header {
     padding-inline: 2rem !important;
