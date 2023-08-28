@@ -1,25 +1,52 @@
-import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link';
+import React from "react";
+import Image from "next/image";
+import { Button } from "react-bootstrap";
+import { useState } from "react";
+import { BsArrowDown } from "react-icons/bs";
 
 const BoatSection = () => {
-	return (
+  const [clicked, setClicked] = useState(false);
+
+  function handleClick() {
+    setClicked(!clicked);
+  }
+  const containerStyle = {
+    maxHeight: clicked ? "30rem" : "4rem", // Adjust the max height values as needed
+    overflow: clicked ? "visible" : "hidden",
+    transition: " 0.75s ease all", // Apply the transition to max-height property
+  };
+
+  return (
     <div className="d-flex flex-column boatSection bg-pg">
       <div className="imgDv">
         <h3>Luxury Yacht Charters</h3>
-        <Image src="/3.png" width={400} height={500} alt=''/>
+        <Image src="/3.png" width={400} height={500} alt="" />
       </div>
       <div className="textDiv">
-        <p>
-        - Set sail on the crystal-clear waters of the Mediterranean Sea with our
-        exclusive luxury yacht charters. Experience the ultimate indulgence as
-        you explore Greece's stunning coastline, secluded coves, and picturesque
-        islands.
+        <p className={clicked ? 'boatPclicked' : 'boatP'}>
+          - Set sail on the crystal-clear waters of the Mediterranean Sea with
+          our exclusive luxury yacht charters. Experience the ultimate
+          indulgence as you explore Greece's stunning coastline, secluded coves,
+          and picturesque islands.
+          <br /> <br />- Our fleet of meticulously maintained yachts offers
+          unparalleled comfort, state-of-the-art amenities, and experienced crew
+          members who will cater to your every need. Whether itis a romantic
+          getaway, a family vacation, or a corporate retreat, we have the
+          perfect yacht to elevate your experience. <br /> <br />- Customize
+          your itinerary to visit iconic destinations such as Santorini,
+          Mykonos, and Crete, or discover hidden gems off the beaten path.
+          Explore ancient ruins, swim in turquoise waters, indulge in sumptuous
+          cuisine, and create memories that will last a lifetime.
         </p>
-        <Link href=''>Show More</Link>
+        <Button
+          onClick={handleClick}
+          className={clicked ? "lBtn clicked" : "lBtn"}
+        >
+          {clicked ? "show less" : "show more"} <BsArrowDown />{" "}
+        </Button>
       </div>
     </div>
   );
-}
+};
 
-export default BoatSection
+export default BoatSection;

@@ -11,7 +11,7 @@ const Footer = () => {
     <div className="footerSection m-lg">
       <div className="footer dView">
         <div className="d-flex flex-column fc1">
-          <Image src={"/logoWhite.svg"} height={100} width={100} alt={""} className="logoImg"/>
+          <Image src={"/logoWhite.svg"} height={100} width={100} alt={""} className="logoImg" />
           <div className="instabox">
             <div>
               <Link className="d-flex" href={"/"}>
@@ -39,24 +39,24 @@ const Footer = () => {
         <div>
           <h5 className="font-weight-bold">Services</h5>
           <ul>
-            <li>Holidays</li>
-            <li>Yatchs</li>
-            <li>Filming</li>
-            <li>Wedding</li>
+            <li> <Link href='/'>Holidays</Link> </li>
+            <li> <Link href='/'>Yatchs</Link> </li>
+            <li> <Link href='/'>Filming</Link> </li>
+            <li> <Link href='/'>Wedding</Link> </li>
           </ul>
         </div>
         <div>
           <h5 className="font-weight-bold">Events</h5>
           <ul>
-            <li>Bookings</li>
-            <li>Gallery</li>
-            <li>Contact Us</li>
+            <li> <Link href='/'>Bookings</Link> </li>
+            <li> <Link href='/'>Gallery</Link> </li>
+            <li> <Link href='/'>Contact</Link>  Us</li>
           </ul>
         </div>
       </div>
       <div className="footer mView">
         <div className="footerTop">
-          <Image src={"/logoWhite.svg"} alt="" width={10} height={10} className="logoImg"/>
+          <Image src={"/logoWhite.svg"} alt="" width={10} height={10} className="logoImg" />
           <p>
             The advantage of hiring a workspace with us is that gives you
             comfortable service and all-around facilities
@@ -88,9 +88,9 @@ const Footer = () => {
           <div>
             <h4>Follow us</h4>
             <ul>
-              <li><FaFacebookF/></li>
-              <li><FaTwitter/></li>
-              <li><FaInstagram/></li>
+              <li><FaFacebookF /></li>
+              <li><FaTwitter /></li>
+              <li><FaInstagram /></li>
             </ul>
           </div>
         </div>

@@ -25,9 +25,9 @@ const Header = () => {
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={handleShow}/>
 				<Navbar.Collapse className='dView'>
 					<Offcanvas placement="end" show={show} responsive='lg' onHide={handleClose}>
-						<Offcanvas.Header closeButton>
+						{/* <Offcanvas.Header closeButton>
 							<Offcanvas.Title>Menu</Offcanvas.Title>
-						</Offcanvas.Header>
+						</Offcanvas.Header> */}
 						<Offcanvas.Body>
 							<Nav className="ml-auto gap-4">
 								<Nav.Link href="#home">Home</Nav.Link>

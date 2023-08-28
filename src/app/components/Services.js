@@ -1,17 +1,19 @@
 "use client";
 
 import React from "react";
-import StackCarousel from "./StackCarousel";
+import { Swiper, SwiperSlide } from 'swiper/react';
 import servicesData from "../servicesData";
-import { Container } from "react-bootstrap";
-import { Row, Col } from "react-bootstrap";
+
+import { Row, Col, Card, Container, Button } from "react-bootstrap";
 import { IconContext } from "react-icons";
-import { useState } from "react";
-import { Button } from 'react-bootstrap'
+import { useState, useRef } from "react";
 import { BsArrowDown } from "react-icons/bs"
 
-import Tab from "react-bootstrap/Tab";
-import Tabs from "react-bootstrap/Tabs";
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+import { Navigation } from 'swiper/modules';
+
 
 const Services = () => {
   const [active, setActive] = useState(0);
@@ -31,26 +33,29 @@ const Services = () => {
   return (
     <div className="servicesSection">
       <h2>Our Range of Services Include </h2>
-      <Container fluid style={containerStyle  }>
+      <Container fluid style={containerStyle}>
         <div className="dView">
-          {servicesData.map((entry, i) => {
-            return (
-              <Row>
-                <Col>
+
+          <Swiper slidesPerView={3}
+            spaceBetween={30} navigation={true} modules={[Navigation]}>
+            {servicesData.map((entry, i) => {
+              return (
+                <SwiperSlide>
                   <IconContext.Provider value={{ className: "serviceIcon" }}>
-                    <StackCarousel
-                      className="serviceCard"
-                      key={i}
-                      icon={entry.icon}
-                      title={entry.title}
-                      p
-                      text={entry.text}
-                    />
+                    <Card className='serviceCard' style={{ border: "none", background: 'transparent' }}>
+                      {entry.icon}
+                      <Card.Title>
+                        <h4>{entry.title}</h4>
+                      </Card.Title>
+                      <Card.Text>
+                        <p>{entry.text}</p>
+                      </Card.Text>
+                    </Card>
                   </IconContext.Provider>
-                </Col>
-              </Row>
-            );
-          })}
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
         </div>
         <div className="mView">
           <div className="d-flex iconNav">
@@ -73,9 +78,9 @@ const Services = () => {
             <p>{servicesData[active].text}</p>
           </div>
         </div>
-      </Container>
-      <Button onClick={handleClick} className={clicked ? "lBtn clicked" : "lBtn"}>{clicked ? 'show more' : 'show less'}  < BsArrowDown /> </Button>
-    </div>
+      </Container >
+      <Button onClick={handleClick} className={clicked ? "lBtn clicked" : "lBtn"}>{clicked ? 'show less' : 'show more'}  < BsArrowDown /> </Button>
+    </div >
   );
 };
 

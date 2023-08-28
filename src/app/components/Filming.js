@@ -43,7 +43,7 @@ const Filming = () => {
         <Button onClick={handleClick} className={clicked ? "lBtn clicked" : "lBtn"}>{clicked ? 'show more' : 'show less'}  < BsArrowDown /> </Button>
       </div>
       <div className="mView">
-        <Container fluid>
+        <Container fluid >
           <div className="d-flex iconNav">
             {filmingData.map((entry, i) => {
               return <div className={i == active ? "activeTab mob-icon" : "mob-icon"} onClick={() => {
@@ -52,8 +52,8 @@ const Filming = () => {
             })}
           </div>
         </Container>
-        <Container fluid>
-          <div className="tabContent">
+        <Container fluid >
+          <div className="tabContent" style={containerStyle}>
             <p>{filmingData[active].text}</p>
           </div>
 
