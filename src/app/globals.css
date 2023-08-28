@@ -117,7 +117,7 @@ section {
 .navbar-collapse {
   flex-grow: 0 !important;
 }
-header .navbar-brand {
+.navbar-brand {
   margin-inline: auto !important;
 }
 .navbar-toggler {
@@ -815,6 +815,9 @@ header .navbar-brand {
   .footerSection {
     padding: 2rem 0 0;
   }
+  .mView .logoImg{
+    margin-left: 19%;
+  }
   .footer.mView{
     display: flex;
     gap: 2rem;
@@ -824,7 +827,7 @@ header .navbar-brand {
     font-size: 1rem !important;
   }
   .footer img {
-    width: 80%;
+    width: 60%;
     margin-right: auto;
     height: auto;
     margin-bottom: 3rem;

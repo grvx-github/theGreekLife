@@ -11,6 +11,7 @@ const Footer = () => {
     <div className="footerSection m-lg">
       <div className="footer dView">
         <div className="d-flex flex-column fc1">
+
           <Image src={"/logoWhite.svg"} height={100} width={100} alt={""} className="logoImg" />
           <div className="instabox">
             <div>
@@ -56,7 +57,10 @@ const Footer = () => {
       </div>
       <div className="footer mView">
         <div className="footerTop">
-          <Image src={"/logoWhite.svg"} alt="" width={10} height={10} className="logoImg" />
+          <div className="navbar-brand">
+            <Image src={"/logoWhite.svg"} alt="" width={10} height={10} className="logoImg" />
+          </div>
+
           <p>
             The advantage of hiring a workspace with us is that gives you
             comfortable service and all-around facilities
