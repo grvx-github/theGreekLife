@@ -19,7 +19,13 @@ const Events = () => {
   function handleCorpClick(){
     setCorpClicked(!corpClicked)
   }
-
+  const arrowUnClicked = {
+    transition: '0.5s ease all'
+  }
+  const arrowClicked = {
+    transform: 'rotate(180deg)',
+    transition: '0.75s ease all'
+  }
 
   return (
     <div className="events">
@@ -60,12 +66,7 @@ const Events = () => {
                 precious memories with your loved ones.
               </p>
             </div>
-            <Button
-              onClick={handleClick}
-              className={clicked ? "lBtn clicked" : "lBtn"}
-            >
-              {clicked ? "show more" : "show less"} <BsArrowDown />{" "}
-            </Button>
+            <Button onClick={handleClick} className={clicked ? "lBtn clicked" : "lBtn"}>{clicked ? 'show less' : 'show more'}  < BsArrowDown style={clicked ? arrowClicked : arrowUnClicked} /> </Button>
           </div>
         </div>
       </div>
@@ -103,12 +104,7 @@ const Events = () => {
             </p>
           </div>
 
-          <Button
-            onClick={handleCorpClick}
-            className={corpClicked ? "lBtn clicked" : "lBtn"}
-          >
-            {corpClicked ? "show more" : "show less"} <BsArrowDown />{" "}
-          </Button>
+          <Button onClick={handleClick} className={clicked ? "lBtn clicked" : "lBtn"}>{clicked ? 'show less' : 'show more'}  < BsArrowDown style={clicked ? arrowClicked : arrowUnClicked} /> </Button>
         </div>
         <Image src={"/6.png"} height={100} width={100} alt="" />
       </div>

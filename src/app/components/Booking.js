@@ -15,6 +15,13 @@ const Booking = () => {
      overflow: clicked ? "hidden" : "visible",
      transition: " 0.75s ease all", // Apply the transition to max-height property
    };
+  const arrowUnClicked = {
+    transition: '0.5s ease all'
+  }
+  const arrowClicked = {
+    transform: 'rotate(180deg)',
+    transition: '0.75s ease all'
+  }
   return (
     <div className="bookingSection">
       <h3>Booking and Contact Information</h3>
@@ -39,12 +46,7 @@ const Booking = () => {
           any questions or need assistance? Our responsive customer support
           system is here to help. Reach out to us at any time, and we'll be
         </p>
-        <Button
-          onClick={handleClick}
-          className={clicked ? "lBtn clicked" : "lBtn"}
-        >
-          {clicked ? "show more" : "show less"} <BsArrowDown />{" "}
-        </Button>
+        <Button onClick={handleClick} className={clicked ? "lBtn clicked" : "lBtn"}>{clicked ? 'show less' : 'show more'}  < BsArrowDown style={clicked ? arrowClicked : arrowUnClicked} /> </Button>
       </div>
     </div>
   );

@@ -28,6 +28,13 @@ const Services = () => {
     overflow: clicked ? 'visible' : 'hidden',
     transition: ' 0.75s ease all' // Apply the transition to max-height property
   };
+  const arrowUnClicked = {
+    transition: '0.5s ease all'
+  }
+  const arrowClicked = {
+    transform : 'rotate(180deg)',
+    transition: '0.75s ease all'
+  }
 
 
   return (
@@ -36,7 +43,7 @@ const Services = () => {
       <Container fluid style={containerStyle}>
         <div className="dView">
 
-          <Swiper slidesPerView={3}
+          <Swiper slidesPerView={4}
             spaceBetween={30} navigation={true} modules={[Navigation]}>
             {servicesData.map((entry, i) => {
               return (
@@ -79,7 +86,7 @@ const Services = () => {
           </div>
         </div>
       </Container >
-      <Button onClick={handleClick} className={clicked ? "lBtn clicked" : "lBtn"}>{clicked ? 'show less' : 'show more'}  < BsArrowDown /> </Button>
+      <Button onClick={handleClick} className={clicked ? "lBtn clicked" : "lBtn"}>{clicked ? 'show less' : 'show more'}  < BsArrowDown style={clicked ? arrowClicked : arrowUnClicked}/> </Button>
     </div >
   );
 };

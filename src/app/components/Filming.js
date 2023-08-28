@@ -23,6 +23,13 @@ const Filming = () => {
     overflow: clicked ? 'visible' : 'hidden',
     transition: ' 0.9s ease all' // Apply the transition to max-height property
   };
+  const arrowUnClicked = {
+    transition: '0.5s ease all'
+  }
+  const arrowClicked = {
+    transform: 'rotate(180deg)',
+    transition: '0.75s ease all'
+  }
 
   return (
     <section className="filming m-lg3">
@@ -57,7 +64,7 @@ const Filming = () => {
             <p>{filmingData[active].text}</p>
           </div>
 
-          <Button onClick={handleClick} className={clicked ? "lBtn clicked" : "lBtn"}>{clicked ? 'show more' : 'show less'}  < BsArrowDown /> </Button>
+          <Button onClick={handleClick} className={clicked ? "lBtn clicked" : "lBtn"}>{clicked ? 'show less' : 'show more'}  < BsArrowDown style={clicked ? arrowClicked : arrowUnClicked} /> </Button>
         </Container>
       </div>
     </section>

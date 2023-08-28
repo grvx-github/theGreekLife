@@ -175,7 +175,18 @@ section {
 
 /* Services  */
 .swiper {
-  width: 100% !important;
+  width: 95%!important;
+  position: static;
+}
+.swiper-wrapper{
+  width: 95%!important;
+}
+.swiper-button-prev,
+.swiper-button-next{
+  top: 35%!important;
+}
+.swiper-button-prev{
+  left: -2rem!important;
 }
 .servicesSection {
   background: url("/2.png"),
@@ -639,7 +650,7 @@ section {
     margin-top: 2.5rem;
     padding: 1rem;
     width: 100%;
-    top: 35%;
+    top: 45%;
     margin-top: 0;
   }
   .heroSection {
@@ -688,7 +699,7 @@ section {
     transition: 0.75s ease all;
   }
   .boatPclicked {
-    max-height: 40rem;
+    max-height: 45rem;
     overflow: visible;
   }
   .filming {

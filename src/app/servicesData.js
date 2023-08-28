@@ -32,7 +32,35 @@ const servicesData = [
 		eKey: 'interpreters',
 		title: "Experienced Tour Guides and Interpreters",
 		text: "Our team of knowledgeable and multilingual tour guides will enhance your travel experience by providing insightful information about Greece's rich history, culture and landscape. They will ensure you don't miss on any hidden gems and make a truly memorable journey."
-	}
+	},
+	{
+		id: 5,
+		icon: <MdLuggage />,
+		eKey: 'transportation',
+		title: "Transportation Logistics",
+		text: "Leave the hassle of transportation arrangements to us. We offer reliable and convenient transfer services, including airport pick-ups and drop-off, private chaufers, and interciry transfers. Travel in style and comfort while we take care of logistics."
+	},
+	{
+		id: 6,
+		icon: <MdLuggage />,
+		eKey: 'transportation',
+		title: "Transportation Logistics",
+		text: "Leave the hassle of transportation arrangements to us. We offer reliable and convenient transfer services, including airport pick-ups and drop-off, private chaufers, and interciry transfers. Travel in style and comfort while we take care of logistics."
+	},
+	{
+		id: 7,
+		icon: <MdLuggage />,
+		eKey: 'transportation',
+		title: "Transportation Logistics",
+		text: "Leave the hassle of transportation arrangements to us. We offer reliable and convenient transfer services, including airport pick-ups and drop-off, private chaufers, and interciry transfers. Travel in style and comfort while we take care of logistics."
+	},
+	{
+		id: 8,
+		icon: <MdLuggage />,
+		eKey: 'transportation',
+		title: "Transportation Logistics",
+		text: "Leave the hassle of transportation arrangements to us. We offer reliable and convenient transfer services, including airport pick-ups and drop-off, private chaufers, and interciry transfers. Travel in style and comfort while we take care of logistics."
+	},
 
 ]
 
