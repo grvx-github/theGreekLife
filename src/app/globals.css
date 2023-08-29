@@ -127,6 +127,20 @@ section {
 /* header ends */
 
 /* Services  */
+.swiper{
+  position: static!important;
+  padding-inline: 2.25rem 2rem!important;
+}
+.swiper-button-prev {
+  color: #8598B0!important;
+  left: -1.2rem!important;
+}
+
+.swiper-button-next {
+  color: #8598B0!important;
+  right: -1.75rem!important;
+}
+
 
 .servicesSection {
   background: url("/2.webp"),

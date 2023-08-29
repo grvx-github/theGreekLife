@@ -10,7 +10,7 @@ import { BsArrowDown } from "react-icons/bs";
 import { FaPlus, FaMinus } from "react-icons/fa";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
+import { Navigation, Parallax } from "swiper/modules";
 
 const Services = () => {
   const [clicked, setClicked] = useState(false);
@@ -45,9 +45,10 @@ const Services = () => {
         <div className="dView" style={containerStyle}>
           <Swiper
             slidesPerView={4}
-            spaceBetween={30}
+            spaceBetween={60}
             navigation={true}
-            modules={[Navigation]}
+            parallax={true}
+            modules={[Navigation, Parallax]}
           >
             {servicesData.map((entry, i) => (
               <SwiperSlide key={i}>
