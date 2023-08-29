@@ -27,7 +27,7 @@ const BoatSection = () => {
     <div className="d-flex flex-column boatSection bg-pg">
       <div className="imgDv">
         <h3>Luxury Yacht Charters</h3>
-        <Image src="/3.png" width={400} height={500} alt="" />
+        <Image src="/3.webp" width={400} height={500} alt="" />
       </div>
       <div className="textDiv">
         <p className={clicked ? 'boatPclicked' : 'boatP'}>

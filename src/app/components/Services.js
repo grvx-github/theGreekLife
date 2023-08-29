@@ -7,11 +7,10 @@ import servicesData from "../servicesData";
 import { Card, Container, Button, Dropdown } from "react-bootstrap";
 import { IconContext } from "react-icons";
 import { BsArrowDown } from "react-icons/bs";
-import { FaPlus } from "react-icons/fa";
+import { FaPlus, FaMinus } from "react-icons/fa";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
-import "../styles/services.module.css";
 
 const Services = () => {
   const [clicked, setClicked] = useState(false);
@@ -27,7 +26,7 @@ const Services = () => {
    }
 
   const containerStyle = {
-    maxHeight: clicked ? "fit-content" : "18rem",
+    maxHeight: clicked ? "27rem" : "18rem",
     overflow: clicked ? "visible" : "hidden",
     transition: "0.75s ease all",
   };
@@ -42,8 +41,8 @@ const Services = () => {
   return (
     <div className="servicesSection">
       <h2>Our Range of Services Include</h2>
-      <Container fluid style={containerStyle}>
-        <div className="dView">
+      <Container fluid>
+        <div className="dView" style={containerStyle}>
           <Swiper
             slidesPerView={4}
             spaceBetween={30}
@@ -84,7 +83,7 @@ const Services = () => {
 
                   <Button className="clickBtn" onClick={() => dropClick(i)}>
                     <IconContext.Provider value={{ className: "plusIcon" }}>
-                      <FaPlus />
+                      {drop[i] ? <FaMinus /> : <FaPlus />}
                     </IconContext.Provider>
                   </Button>
                 </div>

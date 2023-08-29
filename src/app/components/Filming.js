@@ -24,12 +24,12 @@ const Filming = () => {
     transition: ' 0.9s ease all' // Apply the transition to max-height property
   };
   const arrowUnClicked = {
-    transition: '0.5s ease all'
-  }
+    transition: "0.5s ease all",
+  };
   const arrowClicked = {
-    transform: 'rotate(180deg)',
-    transition: '0.75s ease all'
-  }
+    transform: "rotate(180deg)",
+    transition: "0.75s ease all",
+  };
 
   return (
     <section className="filming m-lg3">

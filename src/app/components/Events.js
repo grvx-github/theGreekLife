@@ -32,7 +32,7 @@ const Events = () => {
       <div className="weddingSection m-lg2">
         <h3>Weddings</h3>
         <div className="d-flex weddingFx">
-          <Image src={"/5.png"} height={100} width={100} alt="" />
+          <Image src={"/5.webp"} height={100} width={100} alt="" />
           <div className="weddingText">
             <div className={clicked ? 'weddingClicked' : 'wedding'}>
               <p>
@@ -106,7 +106,7 @@ const Events = () => {
 
           <Button onClick={handleCorpClick} className={clicked ? "lBtn clicked" : "lBtn"}>{clicked ? 'show less' : 'show more'}  < BsArrowDown style={clicked ? arrowClicked : arrowUnClicked} /> </Button>
         </div>
-        <Image src={"/6.png"} height={100} width={100} alt="" />
+        <Image src={"/6.webp"} height={100} width={100} alt="" />
       </div>
       <div className="poolImg">
         <Image src={"/7.png"} alt="" width={100} height={100} />
