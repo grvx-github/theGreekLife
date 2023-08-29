@@ -109,7 +109,7 @@ const Events = () => {
         <Image src={"/6.webp"} height={100} width={100} alt="" />
       </div>
       <div className="poolImg">
-        <Image src={"/7.png"} alt="" width={100} height={100} />
+        <Image src={"/7.webp"} alt="" width={100} height={100} />
       </div>
     </div>
   );
