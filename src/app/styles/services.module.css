@@ -1,0 +1,93 @@
+.swiper {
+  width: 95% !important;
+  position: static;
+}
+.swiper-wrapper {
+  width: 95% !important;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  top: 35% !important;
+}
+.swiper-button-prev {
+  left: -2rem !important;
+}
+.servicesSection {
+  background: url("../../../public/2.png"),
+    linear-gradient(
+      91.16deg,
+      #217bd8 -1%,
+      rgba(0, 0, 0, 0) 16.09%,
+      rgba(0, 0, 0, 0) 74.76%,
+      #217bd8 102.1%
+    ),
+    linear-gradient(0deg, #ffffff, #ffffff);
+  background-size: cover;
+  text-align: center;
+  padding: 5rem 4rem;
+  position: relative;
+  color: white;
+  transition: all 1s ease;
+}
+
+.serviceCard  {
+  color: white!important;
+}
+.servicesSection::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+.servicesSection h2 {
+  z-index: 2;
+  position: relative;
+  margin-bottom: 4rem !important;
+}
+.servicesSection button {
+  z-index: 2;
+  margin-top: 3rem;
+  margin-inline: auto;
+}
+.servicesSection .card {
+  background-color: transparent;
+  text-align: left;
+  color: white;
+  z-index: 2;
+}
+
+.servicesSection .card-title {
+  min-height: 3.8rem;
+  margin-top: 2rem;
+}
+.servicesSection .card-title h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.servicesSection .dView {
+  display: flex;
+  gap: 2rem;
+}
+@media screen and (max-width: 746px) {
+  .servicesSection .container-fluid {
+    flex-direction: column;
+  }
+  .servicesSection {
+    padding: 4rem 0;
+    background: linear-gradient(
+        54deg,
+        #217bd8 0%,
+        rgba(0, 0, 0, 0) 51.56%,
+        #217bd8 100%
+      ),
+      url("/2.png"), lightgray 50% / cover no-repeat;
+  }
+  .servicesSection h2 {
+    margin-bottom: 2rem !important;
+    font-weight: 700 !important;
+    color: #5bd9ff;
+  }
+}

@@ -5,14 +5,14 @@ import React from "react";
 import { Container, Button } from "react-bootstrap";
 import Header from "./Header";
 import { BsArrowRight } from 'react-icons/bs'
-
+import '../styles/hero.modules.css'
 
 const Hero = () => {
   return (
-    <section className="heroSection bg-pg">
+    <section className='heroSection bg-pg'>
       <Container fluid>
         <Header />
-        <div className="heroCenter d-flex flex-column">
+        <div className='heroCenter d-flex flex-column'>
           <h1>Destination Management Services</h1>
           <p>
             Welcome to Greece's premier destination management services

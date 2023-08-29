@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react';
-import { Container, Nav, Navbar, Offcanvas } from 'react-bootstrap';
+import { Nav, Navbar, Offcanvas } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Image from 'next/image';
 import { useState } from 'react';

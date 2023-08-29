@@ -1,0 +1,50 @@
+.heroContainer {
+  position: relative;
+}
+.heroSection {
+  min-height: 99.9vh;
+  background: url("../../../public/1.png"),
+    linear-gradient(
+      180deg,
+      #285672 0%,
+      rgba(0, 0, 0, 0) 33.85%,
+      rgba(0, 0, 0, 0) 75.52%,
+      #285672 100%
+    );
+  background-size: cover;
+  padding: 0.5rem 3.5rem;
+}
+.heroCenter {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  text-align: center;
+  color: white;
+  padding: 2rem 4rem;
+  width: 95%;
+  margin: auto;
+  gap: 1rem;
+}
+.heroCenter p {
+  width: 90%;
+  margin-inline: auto;
+}
+
+@media screen and (max-width: 746px) {
+  .heroCenter {
+    margin-top: 2.5rem;
+    padding: 1rem;
+    width: 100%;
+    top: 45%;
+    margin-top: 0;
+  }
+  .heroSection {
+    min-height: 70vh;
+    padding: 0.5rem 1rem;
+  }
+}
+

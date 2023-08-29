@@ -135,59 +135,8 @@ section {
 }
 /* header ends */
 
-/* Hero Section */
-.heroContainer {
-  position: relative;
-}
-.heroSection {
-  min-height: 99.9vh;
-  background: url("../../public/1.png"),
-    linear-gradient(
-      180deg,
-      #285672 0%,
-      rgba(0, 0, 0, 0) 33.85%,
-      rgba(0, 0, 0, 0) 75.52%,
-      #285672 100%
-    );
-  background-size: cover;
-  padding: 0.5rem 3.5rem;
-}
-.heroCenter {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  justify-content: center;
-  align-items: center;
-  height: 500px;
-  text-align: center;
-  color: white;
-  padding: 2rem 4rem;
-  width: 95%;
-  margin: auto;
-  gap: 1rem;
-}
-.heroCenter p {
-  width: 90%;
-  margin-inline: auto;
-}
-/* Hero ends */
-
 /* Services  */
-.swiper {
-  width: 95%!important;
-  position: static;
-}
-.swiper-wrapper{
-  width: 95%!important;
-}
-.swiper-button-prev,
-.swiper-button-next{
-  top: 35%!important;
-}
-.swiper-button-prev{
-  left: -2rem!important;
-}
+
 .servicesSection {
   background: url("/2.png"),
     linear-gradient(
@@ -223,7 +172,7 @@ section {
   position: relative;
   margin-bottom: 4rem !important;
 }
-.servicesSection button {
+.servicesSection .lBtn {
   z-index: 2;
   margin-top: 3rem;
   margin-inline: auto;
@@ -247,9 +196,70 @@ section {
   font-weight: 700;
 }
 .servicesSection .dView {
-  display: flex;
   gap: 2rem;
 }
+.dropDownBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px 8px 0 0;
+  border: 1px solid #01214b;
+  background: #0c2d50;
+  padding: 10px;
+  gap: 10px;
+}
+.servicesSection .mView .container-fluid {
+  display: flex;
+  gap: 0.5rem;
+}
+.dropDownTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 0.95rem;
+}
+.servicesSection > *{
+  position: relative;
+  z-index: 9;
+}
+.servicesSection .dropdown-toggle::after {
+  content: none;
+}
+.servicesSection .dropdown-toggle {
+  border: none;
+  padding: 0;
+  background: none;
+}
+.serviceMIcon {
+  width: 2rem;
+  height: auto;
+  border-radius: 50%;
+  border: none;
+  background: #061d36;
+  color: #5bd9ff;
+  padding: 0.25rem;
+}
+.clickBtn{
+  background: none!important;
+  padding: 0!important;
+  margin: 0!important;
+  border: none!important;
+}
+.plusIcon {
+  color: #5bd9ff;
+}
+.dropDownDetails {
+  display: none;
+  background-color: #0f3f71;
+  padding: 1rem 2rem;
+  border-radius: 0 0 8px 8px;
+}
+.dropDownDetails.show{
+  display: block;
+}
+
 /* Services */
 
 /* Boat Section */
@@ -426,7 +436,7 @@ section {
   font-weight: 900 !important;
   margin-bottom: 1.5rem !important;
 }
-.buC{
+.buC {
   max-height: 2rem;
   overflow: hidden;
   transition: 0.75s ease all;
@@ -592,9 +602,9 @@ section {
     font-size: 1.1rem !important;
     width: 50% !important;
     border: none !important;
-    border-radius: 20px 0 0 20px!important;
+    border-radius: 20px 0 0 20px !important;
   }
-  .offcanvas-lg .navbar-nav{
+  .offcanvas-lg .navbar-nav {
     margin-top: 2rem;
   }
   .offcanvas-header {
@@ -649,17 +659,7 @@ section {
   .dView {
     display: none !important;
   }
-  .heroCenter {
-    margin-top: 2.5rem;
-    padding: 1rem;
-    width: 100%;
-    top: 45%;
-    margin-top: 0;
-  }
-  .heroSection {
-    min-height: 70vh;
-    padding: 0.5rem 1rem;
-  }
+
   .heroSection .navbar {
     flex-wrap: nowrap !important;
     padding-inline: 3rem 0 !important;
@@ -670,18 +670,16 @@ section {
   }
   .servicesSection {
     padding: 4rem 0;
-    background: linear-gradient(
-        54deg,
-        #217bd8 0%,
-        rgba(0, 0, 0, 0) 51.56%,
-        #217bd8 100%
-      ),
-      url("/2.png"), lightgray 50% / cover no-repeat;
+    background: linear-gradient(54deg, #217BD8 0%, rgba(0, 0, 0, 0.00) 51.56%, #217BD8 100%), #083461;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
-  .servicesSection h2 {
+    .servicesSection h2 {
     margin-bottom: 2rem !important;
     font-weight: 700 !important;
     color: #5bd9ff;
+  }
+  .dropDownDetails p {
+    font-size: 0.9rem;
   }
   .filming h2 {
     color: #5bd9ff;
@@ -829,10 +827,10 @@ section {
   .footerSection {
     padding: 2rem 0 0;
   }
-  .mView .logoImg{
+  .mView .logoImg {
     margin-left: 19%;
   }
-  .footer.mView{
+  .footer.mView {
     display: flex;
     gap: 2rem;
   }
@@ -907,4 +905,9 @@ section {
       ),
       url("/2.png"), lightgray 50% / cover no-repeat;
   }
+}
+
+.serviceIcon {
+  color: #5bd9ff;
+  font-size: 3rem;
 }
