@@ -474,6 +474,9 @@ section {
     position: relative;
     min-height: 25rem;
   }
+  .poolImg{
+    max-height: 21rem;
+  }
 }
 @media screen and (min-width: 992px) {
   header .navbar {
