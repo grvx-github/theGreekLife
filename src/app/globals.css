@@ -59,6 +59,7 @@ p {
   transition-delay: 0.25s !important;
   position: relative;
   width: 11rem;
+  z-index: 40;
 }
 .heroBtn {
   margin-top: 2rem !important;
@@ -127,145 +128,6 @@ section {
 /* header ends */
 
 /* Services  */
-.swiper{
-  position: static!important;
-  padding-inline: 2.25rem 2rem!important;
-}
-.swiper-button-prev {
-  color: #8598B0!important;
-  left: -1.2rem!important;
-}
-
-.swiper-button-next {
-  color: #8598B0!important;
-  right: -1.75rem!important;
-}
-
-
-.servicesSection {
-  background: url("/2.webp"),
-    linear-gradient(
-      91.16deg,
-      #217bd8 -1%,
-      rgba(0, 0, 0, 0) 16.09%,
-      rgba(0, 0, 0, 0) 74.76%,
-      #217bd8 102.1%
-    ),
-    linear-gradient(0deg, #ffffff, #ffffff);
-  background-size: cover;
-  text-align: center;
-  padding: 5rem 4rem;
-  position: relative;
-  color: white;
-  transition: all 1s ease;
-}
-
-.servicesSection .card {
-  color: white;
-}
-.servicesSection::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.3);
-}
-.servicesSection h2 {
-  z-index: 2;
-  position: relative;
-  margin-bottom: 4rem !important;
-}
-.servicesSection .lBtn {
-  z-index: 2;
-  margin-top: 3rem;
-  margin-inline: auto;
-}
-.servicesSection .card {
-  background-color: transparent;
-  text-align: left;
-  color: white;
-  z-index: 2;
-}
-.serviceIcon {
-  color: #5bd9ff;
-  font-size: 3rem;
-}
-.servicesSection .card-title {
-  min-height: 3.8rem;
-  margin-top: 2rem;
-}
-.servicesSection .card-title h4 {
-  font-size: 1.4rem;
-  font-weight: 700;
-}
-.servicesSection .dView {
-  gap: 2rem;
-}
-.dropDownBar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 8px 8px 0 0;
-  border: 1px solid #01214b;
-  background: #0c2d50;
-  padding: 10px;
-  gap: 10px;
-}
-.servicesSection .mView .container-fluid {
-  display: flex;
-  gap: 0.5rem;
-}
-.dropDownTitle {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0.8rem;
-  font-size: 0.95rem;
-}
-.servicesSection > * {
-  position: relative;
-  z-index: 9;
-}
-.servicesSection .dropdown-toggle::after {
-  content: none;
-}
-.servicesSection .dropdown-toggle {
-  border: none;
-  padding: 0;
-  background: none;
-}
-.serviceMIcon {
-  width: 2rem;
-  height: auto;
-  border-radius: 50%;
-  border: none;
-  background: #061d36;
-  color: #5bd9ff;
-  padding: 0.25rem;
-}
-.clickBtn {
-  background: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  border: none !important;
-}
-.plusIcon {
-  color: #5bd9ff;
-}
-.dropDownDetails {
-  height: 0;
-  background-color: #0f3f71;
-  overflow: hidden;
-  border-radius: 0 0 8px 8px;
-  transition: 0.5s ease all;
-}
-.dropDownDetails.show {
-  height: 13rem;
-  padding: 1rem 1.25rem;
-}
 
 /* Services */
 
@@ -323,30 +185,7 @@ section {
 /* Boat Secion */
 
 /* Filming Section */
-.filming {
-  background: linear-gradient(
-      104.19deg,
-      #5bd9ff -10%,
-      rgba(0, 0, 0, 0) 25%,
-      rgba(0, 0, 0, 0) 78.65%,
-      #5bd9ff 110%
-    ),
-    url("/4.webp");
-  background-size: cover;
-  padding: 4rem 3rem;
-  color: white;
-}
-.filming .card {
-  color: white;
-}
-.filming .container-fluid {
-  margin-block: 4rem;
-  justify-content: space-between;
-}
-.filming .card {
-  max-width: 20rem;
-  margin-inline: auto;
-}
+
 /* Filming */
 
 /* Events */
@@ -620,6 +459,12 @@ section {
   .btn-close {
     margin-inline: auto 0 !important;
   }
+  .dView {
+    display: none;
+  }
+  .mView {
+    display: block;
+  }
 }
 @media screen and (min-width: 992px) {
   header .navbar {
@@ -660,12 +505,6 @@ section {
   header .navbar {
     flex-wrap: nowrap !important;
   }
-  .mView {
-    display: block;
-  }
-  .dView {
-    display: none !important;
-  }
   .navbar-brand {
     margin-inline: auto !important;
   }
@@ -675,31 +514,7 @@ section {
     padding-inline: 3rem 0 !important;
     justify-content: space-between !important;
   }
-  .servicesSection .container-fluid {
-    flex-direction: column;
-  }
-  .servicesSection {
-    padding: 4rem 0;
-    background: linear-gradient(
-        54deg,
-        #217bd8 0%,
-        rgba(0, 0, 0, 0) 51.56%,
-        #217bd8 100%
-      ),
-      #083461;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  }
-  .servicesSection h2 {
-    margin-bottom: 2rem !important;
-    font-weight: 700 !important;
-    color: #5bd9ff;
-  }
-  .dropDownDetails p {
-    font-size: 0.9rem;
-  }
-  .filming h2 {
-    color: #5bd9ff;
-  }
+
   .events h2,
   .bookingSection h2 {
     font-weight: 900 !important;
@@ -719,12 +534,7 @@ section {
     max-height: 45rem;
     overflow: visible;
   }
-  .filming {
-    padding: 2rem;
-  }
-  .filming .flex-row {
-    flex-direction: column !important;
-  }
+
   .flex-row {
     flex-direction: column !important;
   }
@@ -794,9 +604,7 @@ section {
     object-fit: contain;
     display: none;
   }
-  .filming .container-fluid {
-    margin-block: 2rem;
-  }
+
   .weddingFx {
     flex-direction: column;
   }

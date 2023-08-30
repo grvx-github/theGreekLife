@@ -11,6 +11,7 @@ import { FaPlus, FaMinus } from "react-icons/fa";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation, Parallax } from "swiper/modules";
+import '../styles/services.modules.css'
 
 const Services = () => {
   const [clicked, setClicked] = useState(false);
@@ -39,10 +40,10 @@ const Services = () => {
   };
 
   return (
-    <div className="servicesSection">
+    <section className='servicesSection bg-pg'>
       <h2>Our Range of Services Include</h2>
       <Container fluid>
-        <div className="dView" style={containerStyle}>
+        <div className={clicked ? "serviceClicked dView" : 'dView serviceUnclicked'}>
           <Swiper
             slidesPerView={4}
             spaceBetween={60}
@@ -52,9 +53,9 @@ const Services = () => {
           >
             {servicesData.map((entry, i) => (
               <SwiperSlide key={i}>
-                <IconContext.Provider value={{ className: "serviceIcon" }}>
+                <IconContext.Provider value={{ className: 'serviceIcon' }}>
                   <Card
-                    className="serviceCard"
+                    className='serviceCard'
                     style={{ border: "none", background: "transparent" }}
                   >
                     {entry.icon}
@@ -70,13 +71,13 @@ const Services = () => {
             ))}
           </Swiper>
         </div>
-        <div className="mView">
+        <div className='mView'>
           <div className="container-fluid">
             {servicesData.map((entry, i) => (
-              <div className="dropFullBar" key={i}>
-                <div className="dropDownBar">
+              <div className='dropFullBar' key={i}>
+                <div className='dropDownBar'>
                   <IconContext.Provider value={{ className: "serviceMIcon" }}>
-                    <div className="dropDownTitle">
+                    <div className='dropDownTitle'>
                       <div>{entry.icon}</div>
                       <div>{entry.title}</div>
                     </div>
@@ -107,7 +108,7 @@ const Services = () => {
         {clicked ? "show less" : "show more"}{" "}
         <BsArrowDown style={clicked ? arrowClicked : arrowUnClicked} />
       </Button>
-    </div>
+    </section>
   );
 };
 

@@ -9,6 +9,8 @@ import { useState } from "react";
 import { Button } from 'react-bootstrap'
 import { BsArrowDown } from "react-icons/bs"
 
+import '../styles/filming.modules.css'
+
 const Filming = () => {
 
   const [active, setActive] = useState(0);

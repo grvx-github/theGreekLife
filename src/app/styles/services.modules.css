@@ -1,0 +1,237 @@
+.swiper {
+  position: static !important;
+  padding-inline: 2.25rem 2rem !important;
+}
+.swiper-button-prev {
+  color: #8598b0 !important;
+  left: -1.2rem !important;
+}
+
+.swiper-button-next {
+  color: #8598b0 !important;
+  right: -1.75rem !important;
+}
+
+.servicesSection {
+  background: url("/2.webp"),
+    linear-gradient(
+      91.16deg,
+      #217bd8 -1%,
+      rgba(0, 0, 0, 0) 16.09%,
+      rgba(0, 0, 0, 0) 74.76%,
+      #217bd8 102.1%
+    ),
+    linear-gradient(0deg, #ffffff, #ffffff);
+  background-size: cover;
+  text-align: center;
+  padding: 5rem 4rem;
+  position: relative;
+  color: white;
+  transition: all 1s ease;
+}
+
+.servicesSection .card {
+  color: white;
+}
+.servicesSection::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+.servicesSection h2 {
+  z-index: 2;
+  position: relative;
+  margin-bottom: 4rem !important;
+}
+.servicesSection .lBtn {
+  z-index: 2;
+  margin-top: 3rem;
+  margin-inline: auto;
+}
+.servicesSection .card {
+  background-color: transparent;
+  text-align: left;
+  color: white;
+  z-index: 2;
+}
+.serviceIcon {
+  color: #5bd9ff;
+  font-size: 3rem;
+}
+.servicesSection .card-title {
+  min-height: 3.8rem;
+  margin-top: 2rem;
+}
+.servicesSection .card-title h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.dropDownBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px 8px 0 0;
+  border: 1px solid #01214b;
+  background: #0c2d50;
+  padding: 10px;
+  gap: 10px;
+}
+.servicesSection .mView .container-fluid {
+  display: flex;
+  gap: 0.5rem;
+}
+.dropDownTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 0.95rem;
+}
+.servicesSection > * {
+  position: relative;
+  z-index: 9;
+}
+.servicesSection .dropdown-toggle::after {
+  content: none;
+}
+.servicesSection .dropdown-toggle {
+  border: none;
+  padding: 0;
+  background: none;
+}
+.serviceMIcon {
+  width: 2rem;
+  height: auto;
+  border-radius: 50%;
+  border: none;
+  background: #061d36;
+  color: #5bd9ff;
+  padding: 0.25rem;
+}
+.clickBtn {
+  background: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+.plusIcon {
+  color: #5bd9ff;
+}
+.dropDownDetails {
+  height: 0;
+  background-color: #0f3f71;
+  overflow: hidden;
+  border-radius: 0 0 8px 8px;
+  transition: 0.5s ease all;
+}
+.dropDownDetails.show {
+  height: 13rem;
+  padding: 1rem 1.25rem;
+}
+.dView.serviceClicked {
+  max-height: 47rem;
+  animation: showMore 0.5s ease;
+  overflow: visible;
+  transition: 4000 ease all;
+}
+.dView.serviceUnclicked {
+  max-height: 18rem;
+  animation: showLess 0.7s ease;
+  overflow: hidden;
+  transition: 400 ease all;
+}
+@keyframes showMore {
+  0% {
+    max-height: 18rem;
+    overflow: hidden;
+  }
+  99% {
+    max-height: 33rem;
+    overflow: visible;
+  }
+  100% {
+    max-height: fit-content;
+  }
+}
+@keyframes showLess {
+  0% {
+    max-height: 47rem;
+    overflow: visible;
+  }
+
+  100% {
+    max-height: 18rem;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 1480px) {
+  .dView.serviceClicked {
+    max-height: 60rem;
+    animation: showMore 0.5s ease;
+    overflow: visible;
+    transition: 4000 ease all;
+  }
+  .dView.serviceUnclicked {
+    max-height: 18rem;
+    animation: showLess 0.7s ease;
+    overflow: hidden;
+    transition: 400 ease all;
+  }
+}
+@media screen and (max-width: 1190px) {
+  .dView.serviceClicked {
+    max-height: 80rem;
+    animation: showMore 0.5s ease;
+    overflow: visible;
+    transition: 4000 ease all;
+  } 
+}
+/* @media screen and (max-width: 1170px) {
+  .dView.serviceClicked {
+    max-height: 90rem;
+    animation: showMore 0.5s ease;
+    overflow: visible;
+    transition: 4000 ease all;
+  }
+} */
+@media screen and (max-width: 991px) {
+  .servicesSection .dView {
+    display: none;
+  }
+  .servicesSection .mView {
+    display: block;
+  }
+  .servicesSection .container-fluid {
+    flex-direction: column;
+  }
+  .servicesSection .lBtn {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 746px) {
+  .servicesSection {
+    padding: 4rem 0;
+    background: linear-gradient(
+        54deg,
+        #217bd8 0%,
+        rgba(0, 0, 0, 0) 51.56%,
+        #217bd8 100%
+      ),
+      #083461;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  .servicesSection h2 {
+    margin-bottom: 2rem !important;
+    font-weight: 700 !important;
+    color: #5bd9ff;
+  }
+  .dropDownDetails p {
+    font-size: 0.9rem;
+  }
+}

@@ -3,7 +3,6 @@
 
   const StackCarousel = (props) => {
     return (
-      <div>
         <Card style={{border: "none", background: 'transparent'}}>
           {props.icon}
           <Card.Title>
@@ -13,7 +12,6 @@
             <p>{props.text}</p>
           </Card.Text>
         </Card>
-      </div>
     );
   };
 

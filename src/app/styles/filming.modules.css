@@ -1,0 +1,47 @@
+.filming {
+  background: linear-gradient(
+      104.19deg,
+      #5bd9ff -10%,
+      rgba(0, 0, 0, 0) 25%,
+      rgba(0, 0, 0, 0) 78.65%,
+      #5bd9ff 110%
+    ),
+    url("/4.webp");
+  background-size: cover;
+  padding: 4rem 3rem;
+  color: white;
+}
+.filming .card {
+  color: white;
+}
+.filming .container-fluid {
+  margin-block: 4rem;
+  justify-content: space-between;
+}
+.filming .card {
+  max-width: 20rem;
+  margin-inline: auto;
+}
+@media screen and (max-width:991px) {
+  
+}
+
+@media screen and (max-width: 746px) {
+  .filming {
+    padding: 2rem;
+  }
+  .filming .flex-row {
+    flex-direction: column !important;
+  }
+  .filming .container-fluid {
+    margin-block: 2rem;
+  }
+  .filming h2 {
+    color: #5bd9ff;
+  }
+}
+@media screen and (min-width: 1900px) {
+	.filming .card{
+		max-width: 30rem;
+	}
+}
