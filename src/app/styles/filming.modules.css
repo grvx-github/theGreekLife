@@ -22,8 +22,17 @@
   max-width: 20rem;
   margin-inline: auto;
 }
-@media screen and (max-width:991px) {
-  
+@media screen and (max-width: 991px) {
+  .filming {
+    background: linear-gradient(
+        180.19deg,
+        #5bd9ff -25%,
+        rgba(0, 0, 0, 0) 25%,
+        rgba(0, 0, 0, 0) 78.65%,
+        #5bd9ff 130%
+      ),
+      url("/4.webp");
+  }
 }
 
 @media screen and (max-width: 746px) {
@@ -41,7 +50,7 @@
   }
 }
 @media screen and (min-width: 1900px) {
-	.filming .card{
-		max-width: 30rem;
-	}
+  .filming .card {
+    max-width: 30rem;
+  }
 }

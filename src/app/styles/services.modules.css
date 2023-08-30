@@ -13,15 +13,14 @@
 }
 
 .servicesSection {
-  background: url("/2.webp"),
+  background:
     linear-gradient(
-      91.16deg,
-      #217bd8 -1%,
-      rgba(0, 0, 0, 0) 16.09%,
-      rgba(0, 0, 0, 0) 74.76%,
-      #217bd8 102.1%
-    ),
-    linear-gradient(0deg, #ffffff, #ffffff);
+      96.19deg,
+      #5bd9ff -50%,
+      rgba(0, 0, 0, 0) 20%,
+      rgba(0, 0, 0, 0) 80%,
+      #5bd9ff 140%
+    ), url("/2.webp");  
   background-size: cover;
   text-align: center;
   padding: 5rem 4rem;

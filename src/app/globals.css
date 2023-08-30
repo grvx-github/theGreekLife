@@ -138,27 +138,15 @@ section {
   padding: 2rem 4rem;
   color: white;
 }
-
-.boatSection img {
-  background: linear-gradient(
-      80.69deg,
-      #217bd8 5.5%,
-      rgba(0, 0, 0, 0) 33.48%,
-      rgba(0, 0, 0, 0) 57.97%,
-      #217bd8 95.96%
-    ),
-    linear-gradient(0deg, #d9d9d9, #d9d9d9);
-  border-radius: 1rem;
-  width: 100% !important;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  height: auto;
-}
 .imgDv {
+  background: url("/3.webp");
+  background-size: cover;
   width: 100%;
   padding: 4rem 2rem;
   position: relative;
+  min-height: 48rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
 }
 .imgDv h3 {
   position: absolute;
@@ -216,10 +204,17 @@ section {
   gap: 2rem;
   align-items: flex-start;
 }
-.weddingSection img,
-.corporateSection img {
+.corpImgDiv {
+  background: url("/6.webp");
+  background-size: cover;
   width: 100%;
-  height: auto;
+  min-height: 24rem;
+}
+.weddingImg {
+  background: url("/5.webp");
+  background-size: cover;
+  width: 100%;
+  min-height: 24rem;
 }
 .weddingSection {
   background: linear-gradient(0deg, #083461, #083461),
@@ -258,9 +253,11 @@ section {
   background: linear-gradient(0deg, #061d36, #061d36),
     linear-gradient(0deg, #083461, #083461);
 }
-.poolImg img {
+.poolImg {
   width: 100%;
-  height: auto;
+  height: 42rem;
+  background: url("/7.jpg");
+  background-size: cover;
 }
 /* Copr */
 
@@ -465,6 +462,18 @@ section {
   .mView {
     display: block;
   }
+  .weddingFx {
+    flex-direction: column;
+  }
+  .corporateSection {
+    flex-direction: column-reverse !important;
+    padding: 2rem;
+  }
+   .imgDv {
+    padding: 2rem 0;
+    position: relative;
+    min-height: 25rem;
+  }
 }
 @media screen and (min-width: 992px) {
   header .navbar {
@@ -482,7 +491,7 @@ section {
   }
 }
 
-@media screen and (max-width: 746px) {
+@media screen and (max-width: 747px) {
   p {
     font-size: 1.1rem;
     text-align: center;
@@ -542,10 +551,7 @@ section {
     padding: 2rem;
     flex-direction: column !important;
   }
-  .corporateSection {
-    flex-direction: column-reverse !important;
-    padding: 2rem;
-  }
+
   .corporateSection img {
     margin-bottom: 2rem;
   }
@@ -595,19 +601,8 @@ section {
   .copyrightSection p {
     font-size: 0.8rem;
   }
-  .imgDv {
-    padding: 2rem 0;
-    position: relative;
-  }
-  .imgDv img {
-    height: auto;
-    object-fit: contain;
-    display: none;
-  }
+ 
 
-  .weddingFx {
-    flex-direction: column;
-  }
   .corpText {
     padding: 0;
   }

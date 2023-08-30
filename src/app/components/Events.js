@@ -16,7 +16,7 @@ const Events = () => {
     setClicked(!clicked);
   }
 
-  function handleCorpClick(){
+  function handleCorpClick() {
     setCorpClicked(!corpClicked)
   }
   const arrowUnClicked = {
@@ -32,7 +32,9 @@ const Events = () => {
       <div className="weddingSection m-lg2">
         <h3>Weddings</h3>
         <div className="d-flex weddingFx">
-          <Image src={"/5.webp"} height={100} width={100} alt="" />
+          <div className="weddingImg">
+
+          </div>
           <div className="weddingText">
             <div className={clicked ? 'weddingClicked' : 'wedding'}>
               <p>
@@ -89,13 +91,13 @@ const Events = () => {
               tailored to your specific requirements. Our experienced event
               coordinators will work closely with you to ensure every aspect of
               your event runs smoothly. <br /> <br />
-              
-               - Showcase successful past events and
+
+              - Showcase successful past events and
               share testimonials from satisfied clients who have chosen Greece
               as their event destination. Let their experiences speak for
               themselves and demonstrate the value and success our services
               bring to any event. <br /> <br />
-              
+
               - Highlight the benefits of combining business
               events with leisure activities and cultural exploration. From
               team-building excursions to wine tastings and archaeological
@@ -106,13 +108,17 @@ const Events = () => {
 
           <Button onClick={handleCorpClick} className={clicked ? "lBtn clicked" : "lBtn"}>{clicked ? 'show less' : 'show more'}  < BsArrowDown style={clicked ? arrowClicked : arrowUnClicked} /> </Button>
         </div>
-        <Image src={"/6.webp"} height={100} width={100} alt="" />
+        <div div className="corpImgDiv">
+
+        </div>
+        
       </div>
       <div className="poolImg">
-        <Image src={"/7.webp"} alt="" width={100} height={100} />
+
       </div>
     </div>
-  );
-};
+  )
+}
+
 
 export default Events;
