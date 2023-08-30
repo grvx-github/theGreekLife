@@ -477,6 +477,9 @@ section {
   .poolImg{
     max-height: 21rem;
   }
+  .corpImgDiv{
+    margin-block: 2rem;
+  }
 }
 @media screen and (min-width: 992px) {
   header .navbar {
