@@ -32,7 +32,7 @@ const servicesData = [
 		id: 4,
 		icon: <BsFillPersonLinesFill />,
 		eKey: 'interpreters',
-		title: "Experienced Tour Guides and Interpreters",
+		title: "Experienced Tour Guides and tour",
 		text: "Our team of knowledgeable and multilingual tour guides will enhance your travel experience by providing insightful information about Greece's rich history, culture and landscape. They will ensure you don't miss on any hidden gems and make a truly memorable journey."
 	},
 	{
