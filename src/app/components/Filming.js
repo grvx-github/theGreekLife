@@ -21,7 +21,7 @@ const Filming = () => {
     setClicked(!clicked)
   }
   const containerStyle = {
-    maxHeight: clicked ? '30rem' : '13rem', // Adjust the max height values as needed
+    maxHeight: clicked ? '30rem' : '16rem', // Adjust the max height values as needed
     overflow: clicked ? 'visible' : 'hidden',
     transition: ' 0.9s ease all' // Apply the transition to max-height property
   };

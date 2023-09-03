@@ -17,6 +17,7 @@
 .filming .container-fluid {
   margin-block: 4rem;
   justify-content: space-between;
+  gap: 2rem;
 }
 .filming .card {
   max-width: 20rem;
