@@ -5,6 +5,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs"
 import { FaMap } from "react-icons/fa"
 import { RiClapperboardFill } from 'react-icons/ri'
 import { GiSpeedBoat, GiMicrophone, GiRing } from 'react-icons/gi'
+import { BiCalendarStar } from 'react-icons/bi'
 
 const servicesData = [
 	{
@@ -40,28 +41,28 @@ const servicesData = [
 		icon: <GiRing />,
 		eKey: 'weddings',
 		title: "Weddings",
-		text: "Our team at The Greek Life Inc. ensures that your wedding in Greeceis nothing short of magical.Withpicturesque venues, stunning décor,	personalized themes, and impeccable attention to detail, we creat anunforgettable experiencefor you andyour loved ones.From assiSting withlegal requirements to cooréinating theperfect ceremony, our weddingplanners handle every aspect withexpertise and creativity.Say 'I do' amidst the breathtaking beauty ofGreece and let us make your dreamwedding a reality."
+		text: "Our team at The Greek Life Inc. ensures that your wedding in Greeceis nothing short of magical.With picturesque venues, stunning décor,	personalized themes, and impeccable attention to detail, we create an unforgettable experience for you and your loved ones. From assisting with legal requirements to coordinating the perfect ceremony, our wedding planners handle every aspect with expertise and creativity.Say 'I do' amidst the breathtaking beauty ofGreece and let us make your dreamwedding a reality."
 	},
 	{
 		id: 6,
 		icon: <RiClapperboardFill />,
 		eKey: 'movie',
 		title: "Movie Shoots",
-		text: "Lights, camera, action! The Greek LifeInc.provides exceptional services formovie shoots in GregæUithbreathtaking landscapeSfh toricsites, and world- class prodü6tionfacilities, Greece offers a éiverserange shooting locations.ur teamtakes Care locationscouting, casting, crew management, and logistics, ensuring a seamless production experience.rom independent films to commercial shoots, we have the expertise to bring your vision to life.Lights, camera, and let Greece be the backdrop for your next cinematic masterpiece."
+		text: "Lights, camera, action! The Greek LifeInc. provides exceptional services for movie shoots in Gree with breathtaking landscapes, historic sites, and world-class production facilities, Greece offers a diverse range of shooting locations. Our teamtakes Care location scouting, casting, crew management, and logistics, ensuring a seamless production experience. From independent films to commercial shoots, we have the expertise to bring your vision to life. Lights, camera, and let Greece be the backdrop for your next cinematic masterpiece."
 	},
 	{
 		id: 7,
 		icon: <GiSpeedBoat />,
 		eKey: 'waterSports',
 		title: "Yatch Rentals & Water Sports",
-		text: "Escape to the azure waters of Greece with our yacht rental and water sports services.Whether you desire a luxurious yacht for a private getaway or a thrilling water sports adventure, we have a wide selectiqn of yachts and equipment to suitybu preferences.Sail along the stunnin coastlines, snorkel in crystal- clear waters, or engage in adrenaline - pumping activities like jet skiing and parasailing, Our experienced crew ensures your safety and comfort, while you indulge in the ultimate aquatic experience amidst the beauty Of Greece."
+		text: "Escape to the azure waters of Greece with our yacht rental and water sports services. Whether you desire a luxurious yacht for a private getaway or a thrilling water sports adventure, we have a wide selectiqn of yachts and equipment to suitybu preferences. Sail along the stunning coastlines, snorkel in crystal-clear waters, or engage in adrenaline-pumping activities like jet skiing and parasailing, Our experienced crew ensures your safety and comfort, while you indulge in the ultimate aquatic experience amidst the beauty Of Greece."
 	},
 	{
 		id: 8,
-		icon: <GiMicrophone />,
-		eKey: 'fineDining',
-		title: "Fine Dining & Entertainment Bookings",
-		text: "Indulge your senses with floe fineswdining and entertainment options inGreece 9m Michelin-starred restaurants to authentic local eateries,	our team curates a gastronomic journey tailored to your tastes.Savor delectable Mediterranean cuisine,	paired with exquisite wines, in	stunning locations overlooking the Aegean Sea.Additiohåfly, we arrangeentertainment shows featuring traditional reek music, dance performanpes, and live bands to enhance our Greek Immerse yourself in the vibrant cultural scene and enjoy unforgettable evenings of fine dining and entertainment."
+		icon: <BiCalendarStar />,
+		eKey: 'corporateEvents',
+		title: "Corporate Events",
+		text: "Make a lasting impression with corporate events in Greece organized by The Greek Life Inc. Whether it's a conference, product launch, team-building retreat, or gala dinner, our professional event planners ensure every detail is meticulously executed.From venue selection to audiovisual arrangements, we create an atmosphere that reflects your brand and captivates your guests. Our comprehensive services also include transportation, accommodation, and entertainment arrangements, ensuring a seamless and successful corporate event in the breathtaking landscapes of Greece."
 	}
 
 ]
