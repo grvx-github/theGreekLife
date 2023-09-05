@@ -3,14 +3,14 @@
 }
 .heroSection {
   min-height: 99.9vh;
-  background: url("../../../public/1.webp"),
+  background: url("/1.webp"),
     linear-gradient(
-      180deg,
-      #285672 0%,
-      rgba(0, 0, 0, 0) 33.85%,
-      rgba(0, 0, 0, 0) 75.52%,
-      #285672 100%
-    );
+        104deg,
+        #285672 5.73%,
+        rgba(0, 0, 0, 0) 52.08%,
+        #285672 100%
+      )
+      lightgray 50% / cover no-repeat;
   background-size: cover;
   padding: 0.5rem 3.5rem;
 }
@@ -47,4 +47,3 @@
     padding: 0.5rem 1rem;
   }
 }
-

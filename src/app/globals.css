@@ -133,8 +133,15 @@ section {
 
 /* Boat Section */
 .boatSection {
-  background: url("/yatcchBG.webp");
-  background-size: cover;
+  border: 1px solid #061d36;
+  background: linear-gradient(
+      79deg,
+      #217bd8 -0.13%,
+      rgba(0, 0, 0, 0) 25.38%,
+      rgba(0, 0, 0, 0) 53.44%,
+      #217bd8 92.22%
+    ),
+    #083461;
   padding: 2rem 4rem;
   color: white;
 }
@@ -217,14 +224,14 @@ section {
   min-height: 24rem;
 }
 .weddingSection {
-  background: linear-gradient(0deg, #083461, #083461),
-    linear-gradient(
-      80.69deg,
+  background: linear-gradient(
+      81deg,
       #217bd8 5.5%,
       rgba(0, 0, 0, 0) 33.48%,
       rgba(0, 0, 0, 0) 57.97%,
       #217bd8 95.96%
-    );
+    ),
+    #083461;
 }
 .wedding {
   max-height: 17.75rem;
@@ -250,8 +257,8 @@ section {
 
 /* Corop section */
 .corporateSection {
-  background: linear-gradient(0deg, #061d36, #061d36),
-    linear-gradient(0deg, #083461, #083461);
+  border: 1px solid #061d36;
+  background: #083461;
 }
 .poolImg {
   width: 100%;
@@ -324,7 +331,7 @@ section {
   background: #0000004d;
   color: white;
 }
-.footer input::placeholder{
+.footer input::placeholder {
   color: white;
 }
 .footer button {
@@ -346,6 +353,9 @@ section {
   justify-content: center;
   height: 3rem;
   vertical-align: middle;
+}
+.footer li>a:hover{
+  color: #5bd9ff!important;
 }
 .footer a svg {
   width: 2.5rem;
@@ -466,22 +476,40 @@ section {
   .mView {
     display: block;
   }
+  .weddingSection {
+    background: linear-gradient(
+        180deg,
+        #217bd8 0%,
+        rgba(33, 123, 216, 0) 46.12%,
+        rgba(33, 123, 216, 0) 98.03%,
+        #217bd8 101.78%
+      ),
+      #083461;
+  }
   .weddingFx {
     flex-direction: column;
   }
   .corporateSection {
     flex-direction: column-reverse !important;
     padding: 2rem;
+    background: linear-gradient(
+        180deg,
+        #217bd8 0%,
+        rgba(33, 123, 216, 0) 46.12%,
+        rgba(33, 123, 216, 0) 96.48%,
+        #217bd8 101.78%
+      ),
+      #083461;
   }
-   .imgDv {
+  .imgDv {
     padding: 2rem 0;
     position: relative;
     min-height: 25rem;
   }
-  .poolImg{
+  .poolImg {
     max-height: 21rem;
   }
-  .corpImgDiv{
+  .corpImgDiv {
     margin-block: 2rem;
   }
 }
@@ -611,7 +639,6 @@ section {
   .copyrightSection p {
     font-size: 0.8rem;
   }
- 
 
   .corpText {
     padding: 0;
@@ -739,4 +766,5 @@ section {
 .serviceIcon {
   color: #5bd9ff;
   font-size: 3rem;
+  min-height: 3rem;
 }

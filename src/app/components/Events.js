@@ -29,7 +29,7 @@ const Events = () => {
 
   return (
     <div className="events">
-      <div className="weddingSection m-lg2">
+      <div className="weddingSection ">
         <h3>Weddings</h3>
         <div className="d-flex weddingFx">
           <div className="weddingImg">
@@ -72,7 +72,7 @@ const Events = () => {
           </div>
         </div>
       </div>
-      <div className="corporateSection d-flex m-lg">
+      <div className="corporateSection d-flex">
         <div className="corpText">
           <div className={corpClicked ? 'corpClicked' : 'corp'}>
             <h3>Corporate Events and Other Events</h3>

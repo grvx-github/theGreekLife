@@ -39,6 +39,14 @@
 @media screen and (max-width: 746px) {
   .filming {
     padding: 2rem;
+    background: linear-gradient(
+        190deg,
+        #217bd8 -1.46%,
+        rgba(33, 123, 216, 0) 13.64%,
+        rgba(33, 123, 216, 0) 80.58%,
+        #217bd8 105.91%
+      ),
+      url("/4.webp"), lightgray 50% / cover no-repeat;
   }
   .filming .flex-row {
     flex-direction: column !important;

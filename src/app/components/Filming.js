@@ -38,7 +38,7 @@ const Filming = () => {
       <h2>Filming In Greece</h2>
       <div className="dView">
         <Container fluid className="d-flex flex-row" style={containerStyle}>
-          <IconContext.Provider value={{ color: "#5BD9FF", size: "50px" }}>
+          <IconContext.Provider value={{ className: "serviceIcon" }}>
             {filmingData.map((entry, i) => {
               return (
                 <StackCarousel key={i} icon={entry.icon} text={entry.text} />
