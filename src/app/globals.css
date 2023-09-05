@@ -239,7 +239,7 @@ section {
   transition: 0.75s ease all;
 }
 .weddingClicked {
-  max-height: 35rem;
+  max-height: 44rem;
   overflow: visible;
   transition: 0.75s ease all;
 }
@@ -354,8 +354,8 @@ section {
   height: 3rem;
   vertical-align: middle;
 }
-.footer li>a:hover{
-  color: #5bd9ff!important;
+.footer li > a:hover {
+  color: #5bd9ff !important;
 }
 .footer a svg {
   width: 2.5rem;
@@ -424,6 +424,9 @@ section {
 .boatSection h3 {
   font-weight: 700 !important;
 }
+.boatSection .textDiv h3 {
+  display: none;
+}
 .mob-icon {
   padding: 1rem;
   border: 1px solid #5bd9ff;
@@ -470,6 +473,38 @@ section {
   .btn-close {
     margin-inline: auto 0 !important;
   }
+  .boatSection {
+    background: linear-gradient(
+        180deg,
+        #000000 -20.33%,
+        rgb(0 0 0 / 0%) 91%,
+        rgb(45 48 52 / 0%) 100%
+      ),
+      url(/3.webp), rgb(33, 33, 33) 50% / cover no-repeat;
+
+    position: relative;
+    background-size: cover;
+    padding: 2rem;
+    min-height: 40rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .boatSection .textDiv h3 {
+    display: block;
+    margin-bottom: 6rem;
+    font-size: 2.5rem;
+  }
+  .boatSection .lBtn {
+    margin-inline: auto;
+  }
+  .boatSection > * {
+    position: relative;
+    z-index: 4;
+  }
+  .imgDv {
+    display: none;
+  }
   .dView {
     display: none;
   }
@@ -501,10 +536,19 @@ section {
       ),
       #083461;
   }
-  .imgDv {
-    padding: 2rem 0;
-    position: relative;
-    min-height: 25rem;
+  .weddingClicked {
+    max-height: 70rem;
+    overflow: visible;
+    transition: 0.75s ease all;
+  }
+  .corpClicked {
+    max-height: 72.5rem;
+    overflow: visible;
+    transition: 0.75s ease all;
+  }
+  .bClicked {
+    max-height: 56rem;
+    overflow: visible;
   }
   .poolImg {
     max-height: 21rem;
@@ -526,6 +570,14 @@ section {
   h2 {
     font-size: 3rem;
     text-align: center;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1390px) {
+  .corpClicked {
+    max-height: 64rem;
+  }
+  .bClicked {
+    max-height: 30rem;
   }
 }
 
@@ -566,9 +618,6 @@ section {
   .bookingSection h2 {
     font-weight: 900 !important;
   }
-  .boatSection {
-    padding: 2rem;
-  }
   .boatSection button {
     margin-inline: auto;
   }
@@ -601,22 +650,12 @@ section {
     overflow: hidden;
     transition: 0.75s ease all;
   }
-  .weddingClicked {
-    max-height: 70rem;
-    overflow: visible;
-    transition: 0.75s ease all;
-  }
   .corpText button {
     margin-inline: auto;
   }
   .corp {
     max-height: 18.25rem;
     overflow: hidden;
-    transition: 0.75s ease all;
-  }
-  .corpClicked {
-    max-height: 72.5rem;
-    overflow: visible;
     transition: 0.75s ease all;
   }
   .footer {
@@ -627,10 +666,6 @@ section {
   }
   .bookingSection {
     padding: 2rem 1rem;
-  }
-  .bClicked {
-    max-height: 56rem;
-    overflow: visible;
   }
   .copyrightSection {
     bottom: 0;
@@ -653,15 +688,6 @@ section {
     z-index: 3;
     top: 0;
     left: 0;
-  }
-  .boatSection {
-    background-image: url("/3.webp");
-    background-size: cover;
-    position: relative;
-  }
-  .boatSection > * {
-    position: relative;
-    z-index: 4;
   }
   .boatSection::after {
     content: "";

@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import servicesData from "../servicesData";
 
-import { Card, Container, Button, Dropdown } from "react-bootstrap";
+import { Card, Container, Button } from "react-bootstrap";
 import { IconContext } from "react-icons";
 import { BsArrowDown } from "react-icons/bs";
 import { FaPlus, FaMinus } from "react-icons/fa";
@@ -25,12 +25,6 @@ const Services = () => {
      newDropState[index] = !newDropState[index];
      setDrop(newDropState);
    }
-
-  const containerStyle = {
-    maxHeight: clicked ? "27rem" : "18rem",
-    overflow: clicked ? "visible" : "hidden",
-    transition: "0.75s ease all",
-  };
   const arrowUnClicked = {
     transition: "0.5s ease all",
   };

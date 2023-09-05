@@ -20,6 +20,7 @@ const Filming = () => {
   function handleClick() {
     setClicked(!clicked)
   }
+
   const containerStyle = {
     maxHeight: clicked ? '30rem' : '16rem', // Adjust the max height values as needed
     overflow: clicked ? 'visible' : 'hidden',
@@ -49,7 +50,13 @@ const Filming = () => {
 
         </Container>
 
-        <Button onClick={handleClick} className={clicked ? "lBtn clicked" : "lBtn"}>{clicked ? 'show more' : 'show less'}  < BsArrowDown /> </Button>
+        <Button
+          onClick={handleClick}
+          className={clicked ? "lBtn clicked" : "lBtn"}
+        >
+          {clicked ? "show less" : "show more"}{" "}
+          <BsArrowDown style={clicked ? arrowClicked : arrowUnClicked} />
+        </Button>
       </div>
       <div className="mView">
         <Container fluid >

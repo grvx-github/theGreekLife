@@ -29,6 +29,7 @@ const BoatSection = () => {
         <h3>Luxury Yacht Charters</h3>
       </div>
       <div className="textDiv">
+        <h3>Luxury Yacht Charters</h3>
         <p className={clicked ? 'boatPclicked' : 'boatP'}>
           - Set sail on the crystal-clear waters of the Mediterranean Sea with
           our exclusive luxury yacht charters. Experience the ultimate

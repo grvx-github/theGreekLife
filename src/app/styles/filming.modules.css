@@ -25,6 +25,7 @@
 }
 @media screen and (max-width: 991px) {
   .filming {
+    padding: 2rem;
     background: linear-gradient(
         180.19deg,
         #5bd9ff -25%,
@@ -33,21 +34,11 @@
         #5bd9ff 130%
       ),
       url("/4.webp");
+      background-size: cover;
   }
 }
 
 @media screen and (max-width: 746px) {
-  .filming {
-    padding: 2rem;
-    background: linear-gradient(
-        190deg,
-        #217bd8 -1.46%,
-        rgba(33, 123, 216, 0) 13.64%,
-        rgba(33, 123, 216, 0) 80.58%,
-        #217bd8 105.91%
-      ),
-      url("/4.webp"), lightgray 50% / cover no-repeat;
-  }
   .filming .flex-row {
     flex-direction: column !important;
   }
