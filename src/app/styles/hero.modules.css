@@ -43,6 +43,7 @@
     margin-top: 0;
   }
   .heroSection {
+    background-position: center;
     min-height: 70vh;
     padding: 0.5rem 1rem;
   }

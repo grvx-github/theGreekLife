@@ -123,14 +123,14 @@
   color: #5bd9ff;
 }
 .dropDownDetails {
-  height: 0;
+  max-height: 0;
   background-color: #0f3f71;
   overflow: hidden;
   border-radius: 0 0 8px 8px;
   transition: 0.5s ease all;
 }
 .dropDownDetails.show {
-  height: 13rem;
+  max-height: 21rem;
   padding: 1rem 1.25rem;
 }
 .dView.serviceClicked {
