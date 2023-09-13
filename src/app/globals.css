@@ -90,15 +90,6 @@ section button {
 section {
   padding: 4rem 3rem;
 }
-.bg-pg {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    15deg,
-    rgba(255, 255, 255, 0.5002333697150736) 0%,
-    rgba(255, 255, 255, 0) 35%,
-    rgba(255, 255, 255, 0.4974322492668942) 100%
-  );
-}
 .mView {
   display: none;
 }

@@ -4,11 +4,14 @@ import Image from "next/image";
 import { BsArrowLeft } from "react-icons/bs";
 import { Container, Row, Card, Col } from "react-bootstrap";
 import Footer from "./Footer";
+import SideMenuBar from "./Admin/SideMenuBar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/holidayComp.modules.css";
 
 const HolidayComp = (props) => {
   return (
+    <div>
+    <SideMenuBar />
     <div className="holidayPage">
       <Container fluid className="holidayTop d-flex">
         <div className="backBtn">
@@ -286,6 +289,7 @@ const HolidayComp = (props) => {
         </ul>
       </div>
       <Footer />
+    </div>
     </div>
   );
 };

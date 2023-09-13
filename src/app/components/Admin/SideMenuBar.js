@@ -4,14 +4,14 @@ import React from 'react'
 const SideMenuBar = () => {
 	return (
 		<div class="sidebar menubar" data-color="black">
-			<div class="logo"><a href="/" class="logo-mini">
+			<div class="logo"><a href="/" class="logo-mini"></a>
 				<div class="logo-img">
 					<a href=''></a>
 				</div>
 				<div class="sidebar-wrapper ps ps--active-y">
 					<div class="profile-info row">
 						<div class="profile-image col-4">
-							<a href="#!"><img alt="" src="/zestreact/appnew/images/profile/profile-blog.jpg" class="img-fluid avatar-image">
+							<a href="#!"><img alt="" src="/zestreact/appnew/images/profile/profile-blog.jpg" class="img-fluid avatar-image"/>
 							</a>
 						</div>
 						<div class="profile-details col-8">
@@ -138,7 +138,8 @@ const SideMenuBar = () => {
 								<li>
 									<a class="nav-link" href="/zestreact/appnew/blog/add-category"><span>Add Category</span></a>
 								</li>
-								<li><a class="nav-link" href="/zestreact/appnew/blog/edit-category"><span>Edit Category</span></a>
+								<li>
+									<a class="nav-link" href="/zestreact/appnew/blog/edit-category"><span>Edit Category</span></a>
 								</li>
 							</ul>
 						</li>
@@ -159,7 +160,8 @@ const SideMenuBar = () => {
 						</li>
 						<li class="multipurpose  nav-parent " data-toggle="collapse">
 							<a to="#" class="nav-link" href="#!">
-								<i class="i-layers"></i><p>Multi Purpose</p>
+								<i class="i-layers"></i>
+								<p>Multi Purpose</p>
 								<span class="badge"></span>
 								<span class="arrow i-arrow-left"></span>
 							</a>
@@ -168,14 +170,19 @@ const SideMenuBar = () => {
 								<li>
 									<a class="nav-link" href="/zestreact/appnew/hospital/dashboard"><span>Hospital</span></a>
 								</li>
-								<li><a class="nav-link" href="/zestreact/appnew/music/dashboard"><span>Music</span></a>
-								</li><li><a class="nav-link" href="/zestreact/appnew/crm/dashboard"><span>CRM</span></a>
+								<li>
+									<a class="nav-link" href="/zestreact/appnew/music/dashboard"><span>Music</span></a>
 								</li>
-								<li><a class="nav-link" href="/zestreact/appnew/social/dashboard"><span>Social Media</span></a>
+								<li>
+									<a class="nav-link" href="/zestreact/appnew/crm/dashboard"><span>CRM</span></a>
+								</li>
+								<li>
+									<a class="nav-link" href="/zestreact/appnew/social/dashboard"><span>Social Media</span></a>
 								</li>
 								<li><a class="nav-link" href="/zestreact/appnew/freelance/dashboard"><span>Freelance</span></a>
 								</li>
-								<li><a class="nav-link" href="/zestreact/appnew/university/dashboard"><span>University</span></a>
+								<li>
+									<a class="nav-link" href="/zestreact/appnew/university/dashboard"><span>University</span></a>
 								</li>
 								<li>
 									<a class="nav-link" href="/zestreact/appnew/ecommerce/dashboard"><span>Ecommerce</span></a>
@@ -195,6 +202,7 @@ const SideMenuBar = () => {
 						</div>
 					</div>
 				</div>
+			</div>
 			</div>
 			)
 }
