@@ -3,28 +3,11 @@
 
 import React from 'react';
 import mongoose from 'mongoose';
-import { useRouter } from 'next/navigation';
 import Holiday from '../../../../models/Holiday';
 import HolidayComp from '@/app/components/HolidayComp';
 import dbConnect from '@/app/middlewares/mongoose';
 
-const HolidayId = (props) => {
-	const router = useRouter();
-
-	return (
-		<div>
-			<HolidayComp props={props} />
-			
-		</div>
-	);
-};
-
-export default HolidayId;
-
-export async function getServerSideProps(context) {
-	const id = context.query.id;
-
-	// Check if there's an existing database connection
+export default async function HolidayId({ params, searchParams }) {
 	if (!mongoose.connections[0].readyState) {
 		await mongoose.connect('mongodb://127.0.0.1:27017/', {
 			useNewUrlParser: true,
@@ -33,39 +16,28 @@ export async function getServerSideProps(context) {
 		});
 	}
 
-	console.log(id);
+	const holidayData = await Holiday.findOne({ _id: id });
 
-	try {
-		const holidayData = await Holiday.findOne({ _id: id });
-
-		if (!holidayData) {
-			console.error(`Holiday data not found for ID: ${id}`);
-			return {
-				props: {
-					error: 'Holiday data not found',
-				},
-			}}
-
-			const serializedData = JSON.parse(JSON.stringify(holidayData));
-
-
-		// Return the serialized data as props
+	if (!holidayData) {
+		console.error(`Holiday data not found for ID: ${id}`);
 		return {
 			props: {
-				holidayData: serializedData,
+				error: 'Holiday data not found',
 			},
-		};		
-		
-	} catch (error) {
-		console.error('Error fetching holiday data:', error);
-		// Handle the error or return an error message as needed
-		return {
-			props: {
-				error: 'Failed to fetch holiday data',
-			},
-		};
+		}
 	}
-	
-}
 
+	const serializedData = JSON.parse(JSON.stringify(holidayData));
+	const data =  {
+		props: {
+			holidayData: serializedData,
+		},
+	};
 
+	return (
+		<div>
+			<HolidayComp props={data} />
+			
+		</div>
+	);
+};
