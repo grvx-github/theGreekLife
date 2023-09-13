@@ -5,6 +5,7 @@ import { BsArrowRight } from "react-icons/bs";
 import Copyright from "./Copyright";
 import Image from "next/image";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
+import '../globals.css'
 
 const Footer = () => {
   return (

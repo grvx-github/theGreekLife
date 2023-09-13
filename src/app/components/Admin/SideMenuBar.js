@@ -1,3 +1,4 @@
+
 import React from 'react'
 
 const SideMenuBar = () => {
@@ -197,5 +198,4 @@ const SideMenuBar = () => {
 			</div>
 			)
 }
-
 			export default SideMenuBar

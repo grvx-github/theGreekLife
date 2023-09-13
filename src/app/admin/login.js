@@ -1,3 +1,4 @@
+
 import React from 'react'
 import Login from '../components/Admin/login'
 
@@ -8,5 +9,6 @@ const login = () => {
 		</div>
 	)
 }
+
 
 export default login

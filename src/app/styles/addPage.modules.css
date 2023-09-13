@@ -1,3 +1,4 @@
+
 .content-wrapper {
   padding: 70px 15px 0;
   min-height: calc(100vh - 123px);
@@ -309,3 +310,4 @@ body .form-control[readonly] {
   border-radius: 10px;
   padding: 1rem!important;
 }
+
