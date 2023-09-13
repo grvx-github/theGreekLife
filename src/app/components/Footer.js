@@ -71,13 +71,13 @@ const Footer = () => {
             <h4>Services</h4>
             <ul>
               <li>
-                <p>Email Marketing</p>
+                <p>Terms & Condition</p>
               </li>
               <li>
-                <p>Campaigns</p>
+                <p>Privacy Policy</p>
               </li>
               <li>
-                <p>branding</p>
+                <p className="t-muted">Copyright © 2021</p>
               </li>
             </ul>
           </div>

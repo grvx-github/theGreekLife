@@ -17,12 +17,12 @@ const filmingData = [
 	{
 		id: 3,
 		icon: <ImFolderOpen />,
-		text: "- Showcase a portfolio of previous movies and TV shows filmed in Greece, highlighting the diverse locations and stunning visuals captured on screen. From ancient temples to vibrant cityscapes, Greece offers a myriad of possibilites for your next production "
+		text: "- Check out our portfolio of previous movies and tv shows filmed all over Greece. From ancient temples to vibrant cityscapes, Greece offers a myriad of possibilities for you next production.  "
 	},
 	{
 		id: 4,
 		icon: <RiClapperboardFill />,
-		text: "- Count on us for assistance with location scouting, permits, equipment rental, and recruiting local crews. Our extensive network of professionals ensures toy have access to top-notch talent and resources to bring your vision to life"
+		text: "- Count on us for assistance with location scouting, permits, equipment rental, and recruiting local crews. Our extensive network of professionals ensures you have access to top-notch talent and resources to bring your vision to life"
 	}
 ]
 

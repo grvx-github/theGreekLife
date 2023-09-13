@@ -41,7 +41,7 @@ const BoatSection = () => {
           getaway, a family vacation, or a corporate retreat, we have the
           perfect yacht to elevate your experience. <br /> <br />- Customize
           your itinerary to visit iconic destinations such as Santorini,
-          Mykonos, and Crete, or discover hidden gems off the beaten path.
+          Mykonos, and Crete, or discover hidden gems in the breathtaking back waters.
           Explore ancient ruins, swim in turquoise waters, indulge in sumptuous
           cuisine, and create memories that will last a lifetime.
         </p>

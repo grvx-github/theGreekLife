@@ -10,6 +10,8 @@ import Events from './components/Events'
 import Footer from './components/Footer'
 import Booking from "./components/Booking";
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const helNeue = localFont({
   src: [

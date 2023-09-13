@@ -64,7 +64,7 @@ const Events = () => {
                 bring your dream wedding to fruition.
                 <br />
                 <br />
-                let us take care of all the details, so you can focus on the
+                Let us take care of all the details, so you can focus on the
                 precious memories with your loved ones.
               </p>
             </div>
@@ -75,7 +75,7 @@ const Events = () => {
       <div className="corporateSection d-flex">
         <div className="corpText">
           <div className={corpClicked ? 'corpClicked' : 'corp'}>
-            <h3>Corporate Events and Other Events</h3>
+            <h3>Corporate Events</h3>
             <p>
               - Elevate your next corporate event, conference, or incentive trip
               by choosing Greece as your destination. With its blend of history,
@@ -92,26 +92,24 @@ const Events = () => {
               coordinators will work closely with you to ensure every aspect of
               your event runs smoothly. <br /> <br />
 
-              - Showcase successful past events and
+              {/* - Showcase successful past events and
               share testimonials from satisfied clients who have chosen Greece
               as their event destination. Let their experiences speak for
               themselves and demonstrate the value and success our services
-              bring to any event. <br /> <br />
+              bring to any event. <br /> <br /> */}
 
-              - Highlight the benefits of combining business
-              events with leisure activities and cultural exploration. From
-              team-building excursions to wine tastings and archaeological
+              -  From team-building excursions to wine tastings and archaeological
               tours, Greece offers a plethora of opportunities to enrich your
               event and create unforgettable memories.
             </p>
           </div>
 
-          <Button onClick={handleCorpClick} className={clicked ? "lBtn clicked" : "lBtn"}>{clicked ? 'show less' : 'show more'}  < BsArrowDown style={clicked ? arrowClicked : arrowUnClicked} /> </Button>
+          <Button onClick={handleCorpClick} className={corpClicked ? "lBtn clicked" : "lBtn"}>{corpClicked ? 'show less' : 'show more'}  < BsArrowDown style={corpClicked ? arrowClicked : arrowUnClicked} /> </Button>
         </div>
         <div div className="corpImgDiv">
 
         </div>
-        
+
       </div>
       <div className="poolImg">
 

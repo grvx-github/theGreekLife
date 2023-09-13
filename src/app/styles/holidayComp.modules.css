@@ -1,0 +1,71 @@
+.holidayPage {
+  background: url("/holidayInner.jpeg");
+  background-position: cover;
+  color: white;
+  position: relative;
+  z-index: 4;
+}
+.holidayPage > div{
+	padding: 4rem;
+}
+.holidayPage::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  top: 0;
+  left: 0;
+}
+.holidayPage > * {
+  position: relative;
+  z-index: 6;
+}
+.holidayTop {
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 800 !important;
+  margin-block-end: 2rem;
+}
+.title {
+  width: 100%;
+  text-align: center;
+}
+.title h2 {
+  font-weight: 900 !important;
+}
+.holidayImg {
+  width: 90%;
+	margin-inline: auto;
+  height: 330.684px;
+  border-radius: 10px;
+  background-image: url("/Holiday1.png");
+  background-size: cover;
+  background-position: center !important;
+  margin-block: 2rem;
+}
+.holidayMain {
+  margin-block: 2rem;
+}
+.holidayCard .card {
+  border-radius: 10px!important;
+  border: 1px solid #0d5196!important;
+  background: rgba(6, 38, 70, 0.6)!important;
+	padding: 2rem!important;
+	color: white!important;
+}
+.card-img-top{
+	width: 20%;
+	height: auto;
+	margin-inline: 2rem;
+}
+h4{
+	color: #65C1FE;
+}
+.holidayCard ul{
+	padding: 0;
+}
+.fNotes{
+	margin-block: 2rem;
+}
