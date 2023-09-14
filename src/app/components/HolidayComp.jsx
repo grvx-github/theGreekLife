@@ -11,7 +11,7 @@ import "../styles/holidayComp.modules.css";
 const HolidayComp = (props) => {
   return (
     <div>
-    <SideMenuBar />
+
     <div className="holidayPage">
       <Container fluid className="holidayTop d-flex">
         <div className="backBtn">
@@ -210,7 +210,6 @@ const HolidayComp = (props) => {
                 </Card.Body>
               </Card>
             </Col>
-
             <Col>
               <Card>
                 <Card.Img variant="top" src="/HolidayCardImg1.png"></Card.Img>

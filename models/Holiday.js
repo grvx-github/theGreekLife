@@ -1,3 +1,4 @@
+
 const mongoose = require('mongoose')
 
 
@@ -20,6 +21,10 @@ const greekLifeSchema = new mongoose.Schema({
 mongoose.models = {}
 
 export default mongoose.model("Holiday", greekLifeSchema)
+
+
+
+
 
 
 

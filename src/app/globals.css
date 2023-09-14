@@ -75,7 +75,7 @@ p {
 }
 
 /* Utility Classes */
-.nav-link {
+header .nav-link {
   color: #ffffff !important;
   font-family: "Gothic A1", sans-serif !important;
   font-size: 1.05rem !important;
